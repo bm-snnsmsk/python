@@ -1,48 +1,32 @@
 import requests
 
-class Github :
-    def __init__(self):
-        self.api_url = "https://api.github.com"
-        ## self.token = "2a0cebe35888589a756953098fb345a5c26fc79b"
-        self.token = "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"
+class theMovieDb :
+    def __init__(self) :
+        self.api_url = "https://api.themoviedb.org/3"
+        self.api_key = "0cd3b625da34a8cedab76dcee994505d"
+    
+    def getPopulars(self) :
+        response = requests.get(f'{self.api_url}"/movie/popular?api_key={self.api_key}&language=en-US&page=1"')
+        return response.json()
+    def getsearchResults(self, keyword) :
+        response = requests.get(f'{self.api_url}"/search/keyword?api_key={self.api_key}&query={keyword}&page=1"')
+        return response.json()
 
-    def getUser(self, username) :
-        response = requests.get(self.api_url+"/users/"+username)
-        return response.json() ## alternatif json.loads(response)
-    def getRepositories(self, username) :
-        response = requests.get(self.api_url+" /users/"+username+"/repos")
-        return response.json() ## alternatif json.loads(response)
-    def createRepository(self, name) :
-        response = requests.post(self.api_url+"/user/repos?access_token="+self.token, json = {
-            "name":name,
-            "description":"this is your first repository",
-            "homepage":"https://github.com",
-            "private":False,
-            "has_issues":True,
-            "has_projects":True,
-            "has_wiki":True
-        })
-        return response.json() ## alternatif json.loads(response)
-
-github = Github()
+movieApi = theMovieDb() 
 while True :
-    secim = input("1- Find User\n2- Get Repositories\n3- Create Repository\n4- Exit\nSecim : ")
+    secim = input("1- Popular Movies\n2- Search Movie\n3- Exit\nSeçim : ")
     if secim == "1" :
-        username = input("username : ")
-        result = github.getUser(username)
-        print(f"name : {result['name']}, public repos : {result['public_repos']}, takipçi : {result['followers']}")
+        result = movieApi.getPopulars()
+        for i in result['results'] :
+            print(i['title']) 
     elif secim == "2" :
-        username = input("username : ")
-        result = github.getRepositories(username)
-        ## print(result[0]["name"])
-        for i in result :
-            print(i['name'])
+        aranan = input("aramak istediğiniz film adını girin : ")
+        result = movieApi.getsearchResults(aranan)
+        for i in result['results'] :
+            print(i['name'])  
     elif secim == "3" :
-        name = input("name : ")
-        result = github.createRepository(name)
-        print(result)
-    elif secim == "4" :
-        break
-    else : 
-        print("Yanlış Seçim : ")
+        pass
+    else :
+        print("yanlış seçim")
 
+ 
