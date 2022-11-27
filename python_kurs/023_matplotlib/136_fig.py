@@ -32,6 +32,8 @@ axes[0].set_title("cube")
 axes[1].plot(x,y)
 axes[1].set_title("square")
 plt.tight_layout()
+fig.savefig("fig1.png")
+fig.savefig("fig1.pdf")
 
 
 
