@@ -14,6 +14,12 @@ class MyApp(QtWidgets.QMainWindow):
         self.ui.btn_cikar.clicked.connect(self.hesapla)
         self.ui.btn_carp.clicked.connect(self.hesapla)
         self.ui.btn_bol.clicked.connect(self.hesapla)
+        self.setWindowTitle("denememeeee")
+        self.ui.centralwidget.setStyleSheet("background-color:#125789;  ")
+        self.ui.btn_topla.setStyleSheet("background-color:#199d89; color:#fff; font-weight:bold")
+        self.ui.btn_cikar.setStyleSheet("background-color:#199d89; color:#fff; font-weight:bold ")
+        self.ui.btn_carp.setStyleSheet("background-color:#199d89; color:#fff; font-weight:bold ")
+        self.ui.btn_bol.setStyleSheet("background-color:#199d89; color:#fff; font-weight:bold ")
         
 
     def hesapla(self) : 
