@@ -4,7 +4,9 @@ DBConnect =conn.connect(
 host = "localhost",
 user = "root",
 password = "",
-database = "abc-python")
+database = "abc-kurs")
+
+
 
 
 def insertData(name, price, desc) :
@@ -38,7 +40,7 @@ def insertDatas(liste) :
         print("database kapatıldı")
 
 def getData() :
-    sql = "SELECT * FROM urunler"
+    sql = "SELECT * FROM siparis"
     curs = DBConnect.cursor()
     curs.execute(sql)
     try :       
@@ -50,7 +52,7 @@ def getData() :
         DBConnect.close()
 
 def getDatas() :
-    sql = "SELECT * FROM urunler"
+    sql = "SELECT * FROM siparis"
     curs = DBConnect.cursor()
     curs.execute(sql)    
     try :       
@@ -101,3 +103,5 @@ def deleteData(id) :
     finally :
         DBConnect.close()
         print("database kapatıldı")
+
+
