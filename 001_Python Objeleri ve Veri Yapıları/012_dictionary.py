@@ -1,5 +1,9 @@
 # key - value
 
+# liste = []
+# dictionary = {}
+# tuple = ()
+
 dict = {
     "kocaeli" : 41,
     "istanbul" : 34,

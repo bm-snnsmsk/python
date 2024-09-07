@@ -28,3 +28,6 @@ while noSuccess :
 # 010_liste_metotlari
 - [liste metotları](https://docs.python.org/tr/3.10/tutorial/datastructures.html)
 
+# OOP_004_bazi_metotlar
+- [Special Python Metotları](https://medium.com/data-bistrot/special-methods-in-python-oop-3b99585ee29c)
+

@@ -1,6 +1,11 @@
 liste = [1, "iki", 3]
 tuple = (1, "iki", 3)
 
+# liste = []
+# dictionary = {}
+# tuple = ()
+
+
 print(type(liste))
 print(type(tuple))
 

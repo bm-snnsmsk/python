@@ -8,6 +8,8 @@ print(mesaj.capitalize())
 
 print(mesaj2)
 print(mesaj2.strip())  # başta ve soldaki boşlukları siler
+print(mesaj2.strip("H"))  # başta H'yi siler
+print(mesaj2.strip("Hel"))  # başta Hel'yi siler
 print(mesaj2.lstrip())  # baştaki boşlukları siler
 print(mesaj2.rstrip())  # sağdaki boşlukları siler
 print("e'ler silinsin : "+mesaj2.lstrip("He"))  #  siler        ### silemedim
