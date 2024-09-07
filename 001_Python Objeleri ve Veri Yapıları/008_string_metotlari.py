@@ -50,3 +50,7 @@ print(mesaj.rindex("Hello"))
 
 print(mesaj.isalpha())   # false
 print(mesaj.isdigit())   # false
+
+email = " sNn@GmAil.com"
+print(email)
+print(email.strip().lower())

@@ -1,4 +1,3 @@
+import random
 
-result = ' sinan.şimşek'.strip('ş.')
-
-print(result)
+print(random.randint(3, 9))
