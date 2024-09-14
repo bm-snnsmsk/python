@@ -31,9 +31,12 @@ while noSuccess :
 # OOP_004_bazi_metotlar
 - [Special Python Metotları](https://medium.com/data-bistrot/special-methods-in-python-oop-3b99585ee29c)
 
-# 00_Modüller
+# 007_Modüller
 - pypi.org  => 3. şahıs kütüphaneleri
 - > pip install package_name
 - dir(modul_name)                 // modül içindeki tüm metotları listeler
 - help(modul_name)                // modül ile ilgili tüm açıklamalar
 - help(modul_name.function_name)  // belirtilen fonksiyon ile ilgili yarım açıklaması
+
+# 013_İleri Seviye Modüller
+- https://www.w3schools.com/python/python_datetime.asp
