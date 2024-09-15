@@ -40,3 +40,22 @@ while noSuccess :
 
 # 013_İleri Seviye Modüller
 - https://www.w3schools.com/python/python_datetime.asp
+
+- https://pypi.org/
+- pip install requests
+- https://jsonplaceholder.typicode.com/
+- https://jsonplaceholder.typicode.com/todos
+
+- https://app.exchangerate-api.com/sign-up
+- eemsinan.73@gmail.com
+- Best.221727
+- https://v6.exchangerate-api.com/v6/922e46af4b1e6095bbd57af9/latest/USD
+
+- https://github.com/settings/apps
+- https://docs.github.com/en/rest?apiVersion=2022-11-28
+- api.github.com/
+- api.github.com/users/bm-snnsmsk
+- api.github.com/users/bm-snnsmsk/repos
+
+
+
