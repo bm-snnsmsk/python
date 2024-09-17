@@ -27,7 +27,7 @@ numbers.pop(-1) # son eleman  99
 numbers.pop(7)   # 7
 print(numbers)
 
-numbers.remove(40)    ## verilen değeri sil  değer yok ise hata verir
+numbers.remove(40)    ## verilen değeri sil  değer yok ise hata verir, değerde birden fazla varsa her defsında bir tane siler
 
 
 numbers.sort()    ## sıralar küçükten büyüğe
