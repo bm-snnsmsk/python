@@ -23,6 +23,8 @@ print("#".join(mesaj.split()))    # diziye stringe dönüştürür
 print("---".join(mesaj.split()))    # diziye stringe dönüştürür
 
 print(mesaj.find("T"))    # index numarasını verir
+print("snn" in mesaj)    # true false
+print("snn" not in mesaj)    # true false
 print(mesaj.rfind("T", 10,15))    # sağdan ara index numarasını verir
 print(mesaj.find("There"))    # bulduğu ilk kelimenin index numarasını verir
 print(mesaj.find("baran"))    # -1     bu kelime yok
