@@ -27,7 +27,7 @@ print(sayi)  # global değeri alır
 
 num = 50
 def test2() :
-    global num
+    global num ## burda atama yapılamz
     print(f"num : {num}")
     num = 100
     print(f"num : {num}")
