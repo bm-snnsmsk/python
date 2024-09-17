@@ -18,3 +18,6 @@ tuple + (60, 78, "sinan")
 tuple.count(3)
 tuple.index(3)
 
+## tuple, list'den hafızada daha az yer kaplar
+## bu yüzden projede değiştirilmeyecek olan değerler tuple olarak gösterilirse kasma az olur
+
