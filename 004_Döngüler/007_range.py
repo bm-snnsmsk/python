@@ -18,6 +18,10 @@ print("list(range(50,10))".center(50,"*")) # 50'den geriye sayar
 for i in range(50,10) :
     print(i)
 
+print("list(range(50,10))".center(50,"*")) # 15'den 3'e kadar 4 azalarak geriye sayar
+for i in range(15,3,-4) :
+    print(i)
+
 
 
 
