@@ -17,6 +17,7 @@ print(selamlama[2:30:2])   # ikişer ikişer al
 
 demo = "baran"
 print(demo[::1])
+print(demo[1::2])
 print(demo[::-1])
 
 demo2 = "tuba" * 5
