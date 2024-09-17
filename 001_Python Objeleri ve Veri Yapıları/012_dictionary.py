@@ -17,7 +17,9 @@ dict["kocaeli"] = "new value"
 
 print(dict["kocaeli"])
 
-
+kutuphanem = dict([('a', 1234),('b', 254)]) ## dictinoary oluşturma
+kutuphanem.get("a","böyle bir değer yok mesajı")
+kutuphanem.pop("a") # siler
 
 ## dictionary içinde dictionary, dictionary içinde list
 
@@ -40,6 +42,8 @@ users.update({'kendal' :{"roles":["user"],'age':10,"email":"kendal@gmail.com","a
 print(users.keys())
 users.update({"mehmet":{}})
 print(users.keys())
+print(users.values())
+print(users.items())
 
 print(users["mehmet"])
 print(users["mehmet"]["age"])
