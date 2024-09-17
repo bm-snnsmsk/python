@@ -58,6 +58,7 @@ print(varmi2)  ## 2
 letters2 = ["sinan","baran","emine","tuba nur","kendal","ibrahim"]
 print(letters2)
 letters2.reverse() # ters çevirir
+letters2[::-1] # ters çevirir
 print(letters2)
 
 letters2.sort()  ## sırala
