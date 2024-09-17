@@ -14,8 +14,8 @@ print(mesaj2.lstrip())  # baştaki boşlukları siler
 print(mesaj2.rstrip())  # sağdaki boşlukları siler
 print("e'ler silinsin : "+mesaj2.lstrip("He"))  #  siler        ### silemedim
 
-print(mesaj.split())    # stringi diziye dönüştürür
-print(mesaj.split(" "))    # stringi boşluklardan diziye dönüştürür
+print(mesaj.split())    # stringi boşluklardan diziye dönüştürür
+print(mesaj.split("."))    # stringi noktalardan diziye dönüştürür
 print(mesaj.split()[3])    # stringi diziye dçönüştürür ve 3. indexteki elemanı verir
 print("".join(mesaj.split()))    # diziye stringe dönüştürür
 print(" ".join(mesaj.split()))    # diziye stringe dönüştürür
