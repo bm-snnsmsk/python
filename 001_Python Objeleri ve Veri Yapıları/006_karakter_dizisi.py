@@ -4,6 +4,8 @@ age = 39
 
 selamlama = "benim adım "+ name + " " + surname +" ve " + str(age) + " yaşındayım"
 
+selamlam[2] = "N"
+
 print(selamlama)
 print(selamlama[0])
 print(len(selamlama))
