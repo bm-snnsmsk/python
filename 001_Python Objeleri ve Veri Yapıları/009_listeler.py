@@ -4,6 +4,11 @@ result1 = type(mesaj)
 my_list = [1, 2 , 3, 4, 5]
 my_list2 = ["bir", 2 , True, 4.5]
 
+isim = "sinan"
+print(isim)
+to_list = list(isim)
+print(to_list)
+
 
 result2 = my_list + my_list2
 result22 = my_list.extend(my_list2) # = my_list + my_list2 #  my_list2 aynı ama my_list artık değişmiştir
