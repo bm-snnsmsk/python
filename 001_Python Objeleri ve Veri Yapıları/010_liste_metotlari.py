@@ -64,3 +64,24 @@ print(letters2)
 letters2.sort()  ## sırala
 letters2.reverse() # z-a
 print(letters2)
+
+#################################################
+# STACK (last in first out)
+liste = []
+liste.append(10) ## 
+liste.append(30) ## 
+liste.append(50) ## 
+liste.pop()
+
+
+##################################################
+
+# QUEUE (first in first out)
+liste2 = []
+liste2.append(10) ## 
+liste2.append(30) ## 
+liste2.append(50) ## 
+liste2.pop(0)
+
+
+
