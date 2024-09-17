@@ -20,3 +20,7 @@ print(sonuc)
 liste = [3, 5, 4, 8, 7, 15, 14]
 f = lambda i :  i % 2 
 print(list(map(f, liste)))
+
+########## lambda ################
+elveda = lambda : print("Güle güle")
+elveda()
