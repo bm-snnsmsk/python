@@ -6,6 +6,7 @@ my_list2 = ["bir", 2 , True, 4.5]
 
 
 result2 = my_list + my_list2
+result22 = my_list.extend(my_list2) # = my_list + my_list2 #  my_list2 aynı ama my_list artık değişmiştir
 result3 = len(my_list)
 result4 = my_list2[0]
 result5 = [my_list + my_list2]   # tek elemanlı bir liste
