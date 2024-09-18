@@ -41,6 +41,7 @@ class Circle :
 
 daire = Circle()
 daire1 = Circle(5)
+type(daire)
 
 print(daire.cevre_hesapla())
 print(daire.alan_hesapla())
