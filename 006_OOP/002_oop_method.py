@@ -21,6 +21,8 @@ class Person :
 p1 = Person("sinan",1985)
 p1.intro()
 print(f"{p1.name}'ın yaşı : {p1.calculateAge()}")
+print(dir(Person)
+print(dir(Person.intro)
 
 import math
 class Circle :
