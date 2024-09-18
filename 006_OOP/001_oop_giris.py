@@ -50,7 +50,7 @@ class Person :
     # class attributes
     address = "no information"
 
-    # constructor (yapıcı metot)
+    # constructor (yapıcı metot) # return kullanılmaz
     def __init__(self, name, year) :  # class'tan türetilen objeleri temsil eder
         # object attributes
         self.name = name
