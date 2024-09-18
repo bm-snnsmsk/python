@@ -7,6 +7,16 @@ class Person :
     object attributes
 
     methods
+    
+class Person(isim) :
+    name = isim
+    def metot(self):
+        self.name = "kisi"
+        
+    class attributes
+    object attributes
+
+    methods
 
 
 
