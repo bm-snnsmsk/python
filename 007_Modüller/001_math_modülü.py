@@ -19,4 +19,23 @@ def sqrt(x) :
     print(f"x : {x}")
 sqrt(5)  ## en son yazılan metot geçerli
 
+###############################################################################
+import math
+
+## ebob
+print(math.gcd(39, 65))
+
+
+
+## built-in metot
+print(bin(65))
+print(hex(65))
+print(chr(65))
+print(oct(65))
+
+
+liste = [1,2,3,4,5]
+print(sum(liste))
+
+
 
