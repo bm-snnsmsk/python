@@ -6,7 +6,7 @@ class Person :
     class attributes
     object attributes
 
-    methods
+    methods(self parametresi zorunlu)
     
 class Person :
     pass
