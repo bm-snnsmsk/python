@@ -1,10 +1,10 @@
 # inheritance kalıtım
 
-# class Person :   
+# class Person :   ## üst sınıf
 #     def __init__(self) :  
 #         print("Person created")
 
-# class Student(Person) :
+# class Student(Person) : ## alt sınıf
 #     def __init__(self) :  
 #         Person.__init__(self) # amaç Person clasındaki contructor attributeslerine erişebilmek
 #         print("Student created")
