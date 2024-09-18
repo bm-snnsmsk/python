@@ -8,6 +8,12 @@ class Person :
 
     methods
     
+class Person :
+    pass
+    
+class Person() :
+    pass
+    
 class Person(isim) :
     name = isim
     def metot(self):
