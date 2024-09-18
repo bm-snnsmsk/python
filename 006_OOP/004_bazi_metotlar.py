@@ -22,3 +22,6 @@ m = Movie("rezervuar köpekleri","tarantino", 140)
 print(len(m))  ## normalde class'da çalışmaz
 # print(m.__len__())
 # del m
+
+
+( __name__ == "__main__" )        ## ana program mı ? sorgusu
