@@ -17,6 +17,6 @@ print(liste)
 print(random.sample(range(100), 4))  ## listeden belirli sayıda eleman almak
 print(random.sample(liste, 2))  ## listeden belirli sayıda eleman almak
 
-print(random.randrange(1,13,2)  ## 1, 13 aralığında 2şer atlayarak sayı üret. Tek sayılar
+print(random.randrange(1,13,2))  ## 1, 13 aralığında 2şer atlayarak sayı üret. Tek sayılar
 
 

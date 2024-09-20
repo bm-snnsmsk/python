@@ -57,5 +57,12 @@ while noSuccess :
 - api.github.com/users/bm-snnsmsk
 - api.github.com/users/bm-snnsmsk/repos
 
+# 014_Selenium
+- pip install selenium
+- https://selenium-python.readthedocs.io/
+- https://sites.google.com/chromium.org/driver/ ## driver
+- https://chromedriver.storage.googleapis.com/index.html?path=114.0.5735.90/ ## driver
+- https://selenium-python.readthedocs.io/locating-elements.html
+
 
 
