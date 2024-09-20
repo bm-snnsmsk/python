@@ -64,5 +64,9 @@ while noSuccess :
 - https://chromedriver.storage.googleapis.com/index.html?path=114.0.5735.90/ ## driver
 - https://selenium-python.readthedocs.io/locating-elements.html
 
+# 016_Pandas
+- pip install pandas
+- kaggle.com/datasets
+- https://pandas.pydata.org/
 
 

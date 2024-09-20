@@ -7,10 +7,11 @@ class Question :
     def checkAnswer(self, answer) :
         return self.answer == answer
 
+## programda if-else kullanımına boğmadan güzel bir program oluşturuldu
     
 class Quiz :
     def __init__(self, questions):
-        self.questions = questions
+        self.questions = questions ## sorular listesi
         self.score = 0
         self.questionIndex = 0
     
@@ -22,7 +23,7 @@ class Quiz :
         print(f"Soru {self.questionIndex + 1} : {soru.text}")
 
         for i in soru.choices :
-            print("- ",i)
+            print(" - ",i)
         
         answer = input("cevabınız :")
         # print(soru.checkAnswer(answer))
@@ -33,11 +34,12 @@ class Quiz :
         soru = self.getQuestion()
         if soru.checkAnswer(answer) :
             self.score += 1
-        self.questionIndex += 1
+        self.questionIndex += 1  ## doğru yada yanlış cevaba bakmadan soru indexini artır
 
         # self.displayQuestion()   # başka bir fonksiyonda (loadQuestion) göstrildi. Daha kullanışlı
     
     def loadQuestion(self) : ## for döngüsüne gerek kalmadan döngüdeymiş gibi sürekli yeni bir soru getirir
+        ## eğer soru yoksa sonucu göster
         if len(self.questions) == self.questionIndex:
             self.showScore()
         else :
@@ -63,16 +65,17 @@ class Quiz :
 q1 = Question("en iyi progralama dili", ["c#","c","ptyhon","php"], "php")
 q2 = Question("mardinin plaka kodu kaçtır ?", ["34","44","47","49"], "47")
 q3 = Question("türkiyenin başkenti", ["ankara","istanbul","şırnak","izmir"], "ankara")
-questions = [q1,q2,q3]
+questions = [q1,q2,q3] ## her bir elemanı nesne olan liste
 
 # Quiz oluşturulmadan önce test edildi
 # print(q1.checkAnswer("c"), q2.checkAnswer("47"), q3.checkAnswer("izmir"))
 
 quiz = Quiz(questions)
-# question = quiz.questions[quiz.questionIndex]  # getQuestion(self): daha kullanışlı
-# question = quiz.getQuestion()  # displayQuestion daha kullanışlı
+# question = quiz.questions[quiz.questionIndex]  # getQuestion(self): daha kullanışlı ## quiz.questions[quiz.questionIndex] = 1. soru
 # print(question.text)
+# question = quiz.getQuestion()  # displayQuestion daha kullanışlı
 
+# class içinde displayQuestion() tanımlandıktan sonra
 # quiz.displayQuestion()
 
 quiz.loadQuestion()
