@@ -82,3 +82,20 @@ while noSuccess :
 - Windows Service Name  = MySQL80
 - pip install mysql-connector
 
+######
+- DB Browser for SQLite
+- https://sqlitebrowser.org/dl/
+- import sqlite3    ## built-in modül
+- https://www.sqlitetutorial.net/
+- https://www.sqlitetutorial.net/sqlite-sample-database/     --> burdan ornek DB download edebilirsin 
+
+# 019_PyQt5
+- pip install PyQt5
+- pip install pyqt5-tools    ## dizayn kısmı için bu işe yaramazsa
+- https://build-system.fman.io/qt-designer-download           sayfasından indirilebilir
+- https://www.pythonguis.com/pyqt5-tutorial/
+
+### QtDesigner
+- ui to py
+- pyuic5 untitled.ui -o untitled.py
+

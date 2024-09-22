@@ -6,5 +6,6 @@ conn = mysql.connector.connect(
     user = "root",
     password = "Password1234",
     auth_plugin='mysql_native_password', ## şifre çözümleme hatası bu kodla giderildi
-    database='schooldb'
+    # database='schooldb'
+    database='okuldb'
 )

@@ -6,7 +6,7 @@ def deleteProduct() :
     cursor = conn.cursor()
     
     sorgu = "DELETE FROM products WHERE id = 2 " 
-    sorgu = "DELETE FROM products WHERE name LIKE '%s20%' " 
+    sorgu = "DELETE FROM products WHERE name LIKE '%sam%' " 
         
     cursor.execute(sorgu)    
 

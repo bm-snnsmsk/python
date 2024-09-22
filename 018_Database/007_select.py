@@ -8,6 +8,7 @@ def getProducts() :
     # sql = "SELECT * FROM products"
     sql = "SELECT name, price FROM products"
 
+
     cursor.execute(sql)
     
 

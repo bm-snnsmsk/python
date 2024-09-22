@@ -19,7 +19,8 @@ class Student :
         self.gender = gender
 
     def saveStudent(self) :
-        sql = "INSERT INTO student (StudentNumber, Name, Surname, Birthdate, Gender) VALUES (%s, %s, %s, %s, %s)"
+        # sql = "INSERT INTO student (StudentNumber, Name, Surname, Birthdate, Gender) VALUES (%s, %s, %s, %s, %s)"
+        sql = "INSERT INTO student (student_number, name, surname, birthdate, gender) VALUES (%s, %s, %s, %s, %s)"
         value = (self.studentNumber, self.name, self.surname, self.birthdate, self.gender)
         # self.curs.execute(sql, value)
         Student.curs.execute(sql, value)        
@@ -34,7 +35,8 @@ class Student :
 
     @staticmethod  ## bu kodla ağaşıda self kullanmaya gerek yok, ayrıca instance tanımlanmadan bu bu method class ismiyle kullanılabilir.
     def saveStudents(datas) :
-        sql = "INSERT INTO student (StudentNumber, Name, Surname, Birthdate, Gender) VALUES (%s, %s, %s, %s, %s)"
+        # sql = "INSERT INTO student (StudentNumber, Name, Surname, Birthdate, Gender) VALUES (%s, %s, %s, %s, %s)"
+        sql = "INSERT INTO student (student_number, name, surname, birthdate, gender) VALUES (%s, %s, %s, %s, %s)"
         values = datas
         Student.curs.executemany(sql, values)        
 
@@ -130,20 +132,20 @@ class Student :
 
 
 
-# ogrenci_listesi = [
-#     ("115","ahmet","yılmaz",datetime.datetime(2003, 5, 17), "E"),
-#     ("116","ahmet","yılmaz",datetime.datetime(2003, 5, 17), "E"),
-#     ("117","ahmet","yılmaz",datetime.datetime(2003, 5, 17), "E"),
-#     ("118","ahmet","yılmaz",datetime.datetime(2003, 5, 17), "E"),
-#     ("119","ahmet","yılmaz",datetime.datetime(2003, 5, 17), "E"),
-#     ("120","ahmet","yılmaz",datetime.datetime(2003, 5, 17), "E"),
-# ]
+ogrenci_listesi = [
+    ("115","ahmet","yılmaz",datetime.datetime(2003, 5, 17), "E"),
+    ("116","ahmet","yılmaz",datetime.datetime(2003, 5, 17), "E"),
+    ("117","ahmet","yılmaz",datetime.datetime(2003, 5, 17), "E"),
+    ("118","ahmet","yılmaz",datetime.datetime(2003, 5, 17), "E"),
+    ("119","ahmet","yılmaz",datetime.datetime(2003, 5, 17), "E"),
+    ("120","ahmet","yılmaz",datetime.datetime(2003, 5, 17), "E"),
+]
 
 
 # ogrenci_1 = Student("114","bahar","beniaffet",datetime.datetime(2000, 7, 27), "K")
 # ogrenci_1.saveStudents(ogrenci_listesi)
 
-# Student.saveStudents(ogrenci_listesi)
+Student.saveStudents(ogrenci_listesi)
 # Student.getStudents()
 
 # stu = Student.getStudentById(23)
@@ -159,10 +161,10 @@ class Student :
 # for i in student :
 #     print(i)
 
-liste = [
-    ("sinan", "şimşek", 20),
-    ("tuba", "şimşek", 21),
-    ("emine", "şimşek", 22),
-]
+# liste = [
+#     ("sinan", "şimşek", 20),
+#     ("tuba", "şimşek", 21),
+#     ("emine", "şimşek", 22),
+# ]
 
-Student.updateStudents(liste)
+# Student.updateStudents(liste)
