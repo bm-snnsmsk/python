@@ -68,5 +68,17 @@ while noSuccess :
 - pip install pandas
 - kaggle.com/datasets
 - https://pandas.pydata.org/
+- pip install xlrd     ## excel dosyaları okumak için
 
+# 017_Matplotlib
+- https://matplotlib.org/stable/users/explain/quick_start.html#quick-start
+
+# 018_MySql
+- https://www.mysql.com/
+- https://dev.mysql.com/downloads/installer/
+- MySql Server
+- MySql Workbench    seçilip kurulmalı
+- root şifresi          = Password1234
+- Windows Service Name  = MySQL80
+- pip install mysql-connector
 

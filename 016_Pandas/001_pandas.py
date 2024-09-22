@@ -27,10 +27,22 @@ numbers = [10,20,30,40,50]
 # pandas_series = pd.Series(random_numbers)
 # print(pandas_series)
 
-pandas_series = pd.Series(numbers, ['a','b','c','d', 'e'])
+pandas_series = pd.Series([10,20,30,40,50], ['a','b','c','d', "f"])
+pandas_series2 = pd.Series([10,20,30,40,50])
+pandas_series2 = pd.Series([10,20,30,40,50], [0,1,2,3,4])
 
-# result = pandas_series[0]
-# result = pandas_series[-1]
+result = pandas_series  ## hata yok
+# result = pandas_series["a"]   # hata yok
+result = pandas_series2[0]   # hata yok
+# result = pandas_series[0]  ## hata var
+result = pandas_series.iloc[0]  ## hata yok
+result = pandas_series.iloc[-1]  ## hata yok
+# result = pandas_series2[-1]  ## hata var
+# print(s1[1])
+# print(s1[2])
+# print(s1[3])
+# print(s1[4])
+# print(s1[::-1])
 # result = pandas_series[:2]
 # result = pandas_series[-2:]
 # result = pandas_series['a']
@@ -50,11 +62,11 @@ pandas_series = pd.Series(numbers, ['a','b','c','d', 'e'])
 # result = pandas_series % 2 == 0
 
 # print(pandas_series)
-# print(result)
+print(result)
 
 opel2018 = pd.Series([20,30,40,10],["astra","corsa","mokka","insignia"])
 opel2019 = pd.Series([40,30,20,10],["astra","corsa","Grandland","insignia"])
 
 total = opel2018 + opel2019
-print(total)
+# print(total)
 # print(total["astra"])
