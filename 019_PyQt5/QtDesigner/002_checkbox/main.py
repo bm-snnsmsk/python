@@ -23,7 +23,7 @@ class MainWindow(QMainWindow) :
 
     
     def show_state(self, val) :  ## seciç true ise 2 , false ise 0
-        # print(val) 
+        # print(val)    ## 2 = True - 0 = False
         # print(self.ui.cbx_sinema.isChecked()) 
         # print(self.ui.cbx_sinema.text()) 
         check_box = self.sender() ## hangi checkbox seçili

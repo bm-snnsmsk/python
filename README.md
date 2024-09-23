@@ -94,6 +94,8 @@ while noSuccess :
 - pip install pyqt5-tools    ## dizayn kısmı için bu işe yaramazsa
 - https://build-system.fman.io/qt-designer-download           sayfasından indirilebilir
 - https://www.pythonguis.com/pyqt5-tutorial/
+- https://zetcode.com/gui/pyqt5/
+- https://pythonspot.com/pyqt5/
 
 ### QtDesigner
 - ui to py
