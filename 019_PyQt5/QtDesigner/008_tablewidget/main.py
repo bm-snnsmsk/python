@@ -18,7 +18,16 @@ class MainWindow(QMainWindow) :
 
         self.loadProducts()
         self.ui.btn_kaydet.clicked.connect(self.saveProduct)
+        
+        # self.ui.tableWidget.clicked.connect(self.tekClick)
         self.ui.tableWidget.doubleClicked.connect(self.doubleClick)
+
+        ## çeşitli auayarlamalar ve metotlar
+        # self.ui.tableWidget.setColumnWidth(0,100)
+        # self.ui.tableWidget.setColumnWidth(1,250)    
+        # secili_satır = self.ui.tableWidget.currentRow()
+        # secili_id = self.ui.tableWidget.item(secili_satır, colon_numarasi)
+        # secili_id = self.ui.tableWidget.item(secili_satır, colon_numarasi).text()   ## seçili satır numarası döndürür
 
        
 
@@ -26,6 +35,7 @@ class MainWindow(QMainWindow) :
         print(self.ui.tableWidget.selectedItems())
         for item in self.ui.tableWidget.selectedItems():            
             print(item.row(), item.column(), item.text())    
+
 
 
     def saveProduct(self):
@@ -57,6 +67,7 @@ class MainWindow(QMainWindow) :
 
         rowIndex = 0
         for product in products:
+            
             self.ui.tableWidget.setItem(rowIndex,0, QTableWidgetItem(product['name'])) ## satır, kolon, içerik
             self.ui.tableWidget.setItem(rowIndex,1, QTableWidgetItem(str(product['price'])))
             

@@ -15,8 +15,33 @@ class MainWindow(QMainWindow) :
 
     
     def show_dialog(self) :
+        ##### TYPE
+        ## information
+        ## question
+        ## warning
+        ## critical
+        ## about
+        ## aboutQt
 
+        ###### icons
+        # QMessageBox.Ok
+        # QMessageBox.Open
+        # QMessageBox.Save
+        # QMessageBox.Cancel
+        # QMessageBox.Close
+        # QMessageBox.Yes
+        # QMessageBox.No
+        # QMessageBox.Abort
+        # QMessageBox.Retry
+        # QMessageBox.Ignore
+        
         ################ kısa gösterim STAR ##############
+        ## mesaj alanı html kodları ile özelleştirilebilir.
+        # result = QMessageBox.question(self, "başlık", "mesajjjj", QMessageBox.Ok | QMessageBox.Cancel, QMessageBox.Cancel)
+        # result = QMessageBox.information(self, "başlık", "mesajjjj", QMessageBox.Ok | QMessageBox.Cancel, QMessageBox.Cancel)
+        # result = QMessageBox.critical(self, "başlık", "mesajjjj", QMessageBox.Ok | QMessageBox.Cancel, QMessageBox.Cancel)
+        # result = QMessageBox.warning(self, "başlık", "<b><a href='www.websitem.com' > mesajjjj </a> </b> ", QMessageBox.Ok | QMessageBox.Cancel, QMessageBox.Cancel)
+        
         result = QMessageBox().question(self, "başlık", "mesajjjj", QMessageBox.Ok | QMessageBox.Cancel, QMessageBox.Cancel)
         if result == QMessageBox.Ok :
             print("ok tuşuna basıldı")
@@ -38,6 +63,11 @@ class MainWindow(QMainWindow) :
         # mesaj.setDefaultButton(QMessageBox.Ok)
         # mesaj.setDefaultButton(QMessageBox.Cancel)
         # mesaj.setDetailedText("Detaylar burda....")
+        # mesaj.setEscapeButton(QMessageBox.No)  ## ESC tuşu yerine çalışır
+
+        ## mesaj.button(QMessageBox.Yes).setText("Evet")
+        ## mesaj.button(QMessageBox.No).setText("Hayır")
+        ## mesaj.button(QMessageBox.Cancel).setText("İptal edilecek..!")
 
         # mesaj.buttonClicked.connect(self.popup_btn)
 
