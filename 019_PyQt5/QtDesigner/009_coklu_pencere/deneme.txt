@@ -1,0 +1,8 @@
+pyuic5 login_python.ui -o login_python.py
+pyuic5 anapencere_python.ui -o anapencere_python.py
+pyuic5 urun_kategori_python.ui -o urun_kategori_python.py
+pyuic5 urun_listele_python.ui -o urun_listele_python.py
+pyuic5 untitled.ui -o untitled.py
+
+
+pyrcc5 ikonlar.qrc -o ikonlar_rc.py

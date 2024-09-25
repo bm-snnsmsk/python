@@ -32,6 +32,12 @@ for key,val in d.items() :
 print("Dictionary 4".center(50,"*"))
 for key,val in d.items() :
     print(key)
+print("Dictionary 5".center(50,"*"))
+for val in d.values() :
+    print(val)
+print("Dictionary 6".center(50,"*"))
+for key in d.keys() :
+    print(key)
 
 
 d2 = [

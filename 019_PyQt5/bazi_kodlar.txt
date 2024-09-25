@@ -1,0 +1,3 @@
+where python
+python -m PyQt5.uic.pyuic -x dosya_adi.ui -o python_adi.py
+pyuic5 untitled.ui -o untitled.py

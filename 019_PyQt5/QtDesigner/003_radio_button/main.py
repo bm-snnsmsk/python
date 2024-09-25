@@ -35,10 +35,10 @@ class MainWindow(QMainWindow) :
             if i.isChecked() :
                 self.ui.lbl_ulke.setText(i.text())
 
-    # def radyo_secim(self) : ## boyle çalışır
+    # def radyo_secim(self) : ## boyle de çalışır
     def radyo_secim(self, val) :  # val True-False değeri döndürür
         radio_btn = self.sender()
-        print(f"{radio_btn.text()} - {val}")
+        print(f"{radio_btn.text()} - {val} - {radio_btn.isChecked()}")
 
     
 
