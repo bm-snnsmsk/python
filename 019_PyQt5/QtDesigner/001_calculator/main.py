@@ -4,12 +4,18 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QMainWindow, QToolTip
 from PyQt5.QtGui import QIcon
 
+from PyQt5.uic import loadUi  ## .ui to .py 
+
 from untitled import Ui_MainWindow
 
 
 class MainWindow(QMainWindow) :
     def __init__(self) :
         super(MainWindow, self).__init__() 
+
+        # loadUi("untitled.ui", self)  .ui to .py fakat tavsiye edilemz fakat denemek lazım
+        # pyuic5 untitled.ui -o untitled.py    ## kod satırına
+
         self.ui = Ui_MainWindow()  ## tanımlanan herşeye burdan erişilebilir
         self.ui.setupUi(self)
 

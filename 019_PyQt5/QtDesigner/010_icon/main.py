@@ -12,6 +12,7 @@ class MainWindow(QMainWindow) :
 
         self.ui.pushButton_artir.clicked.connect(self.artir)
         self.ui.pushButton_eksi.clicked.connect(self.azalt)
+        self.ui.pushButton_sil.clicked.connect(self.sil)
 
         self.number = 0
 
@@ -22,6 +23,11 @@ class MainWindow(QMainWindow) :
     def azalt(self) :
         self.number -= 1
         self.ui.label_sonuc.setText(str(self.number))
+
+       
+    def sil(self) :
+        # self.ui.label_sonuc.setText("")
+        self.ui.label_sonuc.clear()
 
        
        

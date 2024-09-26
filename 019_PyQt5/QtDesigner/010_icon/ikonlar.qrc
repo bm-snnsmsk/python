@@ -2,6 +2,9 @@
   <qresource prefix="red">
     <file>red.ico</file>
   </qresource>
+  <qresource prefix="sil">
+    <file>close.ico</file>
+  </qresource>
   <qresource prefix="arkaplan">
     <file>1.jpg</file>
   </qresource>

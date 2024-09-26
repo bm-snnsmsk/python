@@ -91,6 +91,7 @@ while noSuccess :
 
 # 019_PyQt5
 - pip install PyQt5
+- pip show PyQt5
 - pip install pyqt5-tools    ## dizayn kısmı için bu işe yaramazsa
 - https://build-system.fman.io/qt-designer-download           sayfasından indirilebilir
 - https://www.pythonguis.com/pyqt5-tutorial/
@@ -100,4 +101,6 @@ while noSuccess :
 ### QtDesigner
 - ui to py
 - pyuic5 untitled.ui -o untitled.py
+- pyrcc5 ikonlar.qrc -o ikonlar_rc.py
 
+- mkvirtualenv my_env -p pyhton

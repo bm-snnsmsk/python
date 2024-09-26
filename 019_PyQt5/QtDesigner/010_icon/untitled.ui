@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>390</width>
-    <height>378</height>
+    <width>475</width>
+    <height>363</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -121,13 +121,46 @@ border-image: url(:/arkaplan/1.jpg);
      </size>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_sil">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>20</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="ikonlar.qrc">
+      <normaloff>:/black/black.ico</normaloff>:/black/black.ico</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>75</width>
+      <height>75</height>
+     </size>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>390</width>
+     <width>475</width>
      <height>26</height>
     </rect>
    </property>
