@@ -1,4 +1,6 @@
 liste = [1, "iki", 3]
+
+tuple = 1, "iki", 3
 tuple = (1, "iki", 3)
 
 # liste = []
