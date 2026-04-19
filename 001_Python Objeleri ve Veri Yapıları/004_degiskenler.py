@@ -2,6 +2,8 @@ maasALi = 5000
 maasAhmet = 4000
 _vergi = 0.27
 
+yaş = 25  // kabul ediyor ama önerilmez
+
 number = 100
 number1 = 300
 number1 += 30
