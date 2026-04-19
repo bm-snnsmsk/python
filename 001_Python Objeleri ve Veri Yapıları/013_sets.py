@@ -18,7 +18,7 @@ fruits.discard("apple")
 
 print(fruits)
 
-fruits.pop()  ## set listeelerinde son elemanı silmeyi garanti etmez
+fruits.pop()  ## set listeelerinde indexlenme yapılmadığı için son elemanı silmeyi garanti etmez, herhangi bir bir eleman silinebilir
 print(fruits)
 
 fruits.clear()  # tüm elemanlar silinir
