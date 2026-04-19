@@ -48,4 +48,41 @@ print(users.items())
 print(users["mehmet"])
 print(users["mehmet"]["age"])
 
+"""
+ogrenciler = {
+'120' : {'ad':'Ali', 'soyad':'yılmaz', 'telefon':'5444494263'},
+'125' : {'ad':'Ali', 'soyad':'yılmaz', 'telefon':'5444494263'},
+'130' : {'ad':'Ali', 'soyad':'yılmaz', 'telefon':'5444494263'},
+}
+
+ogrencino = input("öğrenci no : ")
+print(ogrenciler[ogrencino])
+"""
+
+"""
+ogrencino = input("öğrenci no : ")
+ogrenciad= input("öğrenci adı : ")
+ogrencisoyad = input("öğrenci soyadı : ")
+ogrencitel = input("öğrenci telefon : ")
+
+# ogrenciler[ogrencino] = {
+#     "ad" : ogrenciad, 
+#     "soyad" : ogrencisoyad, 
+#     "telefon" : ogrencitel, 
+# }
+
+# veya  ama update kullanılırsa , ile birden fazla üye eklenebilir
+ogrenciler.update({
+    ogrencino : {
+     "ad" : ogrenciad, 
+     "soyad" : ogrencisoyad, 
+     "telefon" : ogrencitel, 
+    }
+})
+
+print(ogrenciler)
+"""
+
+
+
 
