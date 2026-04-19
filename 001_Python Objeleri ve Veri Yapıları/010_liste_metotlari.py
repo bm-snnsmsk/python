@@ -16,18 +16,29 @@ numbers.append(49)
 numbers.append("3")
 print(numbers)
 
+#############
+liste = ["sinan", 23, "s", 22, 10, "baran"]
+print(liste)
+liste.append(10)   ### sona eleman ekler
+liste.append(10)
+liste.append(10)
+print(liste)
+#############
+
+numbers.insert(0, 100)   # başa eleman ekleme
 numbers.insert(3, 78)   # araya eleman ekleme
-numbers.insert(-1, 99)
+numbers.insert(-1, 99)   ### sondan bir önceye 99 ekle
+numbers.insert(len(liste), "baran")  ## en sona ekler
 print(numbers[3])
 
 print(numbers)
 numbers.pop() # son eleman  '3'
-numbers.pop(1) # 10
-numbers.pop(-1) # son eleman  99
-numbers.pop(7)   # 7
+numbers.pop(0) # ilk elemanı sil
+numbers.pop(-1) # son elemanı sil  99
+numbers.pop(7)   # 7. elemaı sil
 print(numbers)
 
-numbers.remove(40)    ## verilen değeri sil  değer yok ise hata verir, değerde birden fazla varsa her defsında bir tane siler
+numbers.remove(40)    ## verilen değeri sil  değer yok ise hata verir, değerde birden fazla varsa her defsında bir tane siler (ilk bulduğu elemnı siler)
 
 
 numbers.sort()    ## sıralar küçükten büyüğe
@@ -43,7 +54,7 @@ print(kac_tane)
 print(kac_tane2)
 print(kac_tane3)
 
-print(letters.index("g"))  ## 5. index
+print(letters.index("g"))  ## 5. index  birden fazla varsa ilk elennın indexini döndürür
 
 letters.pop(letters.index("b"))
 print(letters)
@@ -51,6 +62,8 @@ numbers.clear()   ## tüm dizi elemanları siler
 
 varmi1 = "y" in letters
 varmi2 = letters.index("y")
+
+print("baran" in liste)
 
 print(varmi1)  # True
 print(varmi2)  ## 2
@@ -64,6 +77,8 @@ print(letters2)
 letters2.sort()  ## sırala
 letters2.reverse() # z-a
 print(letters2)
+
+letters.clear()    ## dizi içeriğini boşaltır
 
 #################################################
 # STACK (last in first out)
@@ -82,6 +97,11 @@ liste2.append(10) ##
 liste2.append(30) ## 
 liste2.append(50) ## 
 liste2.pop(0)
+
+##################################################
+
+diğer mtodlar 
+https://www.w3schools.com/python/python_lists_methods.asp
 
 
 
