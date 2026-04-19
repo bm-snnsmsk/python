@@ -13,6 +13,7 @@ name2 = 'emine'
 
 isStudent = True
 
+// yukardaki gibi her biri tek satırda değil de hepsi tek bir satırda tanımlanabilir
 x, y, name, isStudent = (3, 3.5, "baran", False)
 
 print(maasALi - (maasALi*_vergi))
