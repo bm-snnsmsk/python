@@ -4,7 +4,7 @@
 # /
 # //     tam kısım
 # **     üs alma
-# %      kalan
+# %      mod alma - bölümden kalan
 
 print(10/3)
 print(10//3)
