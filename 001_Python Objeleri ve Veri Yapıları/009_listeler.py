@@ -14,8 +14,16 @@ result2 = my_list + my_list2
 result22 = my_list.extend(my_list2) # = my_list + my_list2 #  my_list2 aynı ama my_list artık değişmiştir
 result3 = len(my_list)
 result4 = my_list2[0]
-result5 = [my_list + my_list2]   # tek elemanlı bir liste
-result6 = [my_list, my_list2]     # çift elemanlı bir liste
+my_list = [1, 2 , 3, 4, 5]
+my_list2 = ["bir", 2 , True, 4.5]
+
+result11 = my_list + my_list2
+result22 = [my_list + my_list2]    # tek elemanlı bir liste
+result33 = [my_list, my_list2]   # çift elemanlı bir liste
+print(result11)  // [1, 2, 3, 4, 5, 'bir', 2, True, 4.5]
+print(result22)  // [[1, 2, 3, 4, 5, 'bir', 2, True, 4.5]]
+print(result33)  // [[1, 2, 3, 4, 5], ['bir', 2, True, 4.5]]
+print(result33[1][0])   // "bir"
 
 # print(result1)
 # print(result2)
@@ -37,7 +45,7 @@ print(arabalar[-1])
 arabalar[-1] = "Toyota"
 print(arabalar)
 print(arabalar[-2])
-print("Mercedes" in arabalar)
+print("Mercedes" in arabalar)    // True
 print(arabalar[:3])   ## ilk 3 elemaqn
 print(arabalar[-2:])  
 arabalar[-2:] = ["tofaş", "golf"]
@@ -48,5 +56,8 @@ print(result8)
 del arabalar[-1]   ## son elemanı sil
 print(arabalar)
 print(arabalar[::-1])
+
+listem = [1,2,3,4,["sinan", "emine", "baran","pelda"],5,6,7,8,9,0,"bir", "sinan", [100,200,300]]
+print(listem[4])   ### ['sinan', 'emine', 'baran', 'pelda']
 
 
