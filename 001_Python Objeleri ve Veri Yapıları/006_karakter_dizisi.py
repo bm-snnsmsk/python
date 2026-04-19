@@ -16,6 +16,8 @@ print(selamlama[2:5])
 print(selamlama[2:])
 print(selamlama[:21])
 print(selamlama[2:30:2])   # ikişer ikişer al
+print(selamlama[2:30:1])   # birer birer al
+print(selamlama[2:30])   # birer birer al
 
 demo = "baran"
 print(demo[::1])
