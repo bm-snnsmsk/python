@@ -30,11 +30,14 @@ print("Dictionary 3".center(50,"*"))
 for key,val in d.items() :
     print(val)
 print("Dictionary 4".center(50,"*"))
-for key,val in d.items() :
+for key,val in d.items() :  ### eleman gruplarına ulaşmak istenirse
     print(key)
+    
 print("Dictionary 5".center(50,"*"))
-for val in d.values() :
+for val in d.values() :  ### adec value değerleri döndürür
     print(val)
+
+
 print("Dictionary 6".center(50,"*"))
 for key in d.keys() :
     print(key)
