@@ -27,9 +27,9 @@ def yasHesapla(dogumYili) :
 def emekliligeKacYilKaldi(dogumYili, name) :
     ''' 
     emelilik yası hesaplama 
-    DOCSTRING : dogum yilina gore emeklilik
-    INPUT : dogum yili
-    output:hesaplanan yil bilgisi
+    DOCSTRING: dogum yilina gore emeklilik
+    INPUT: dogum yili
+    OUTPUT:hesaplanan yil bilgisi
     '''
     yas = yasHesapla(dogumYili)
     emeklilik = 65 - yas
