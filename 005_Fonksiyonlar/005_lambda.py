@@ -1,4 +1,4 @@
-def kareal(sayi) : return sayi ** 2
+def kareal(sayi) : return sayi ** 2   ## ## lambda sayi: sayi**2    = kareal = lambda sayi: sayi**2   >>> ilgili fonyonu tek satırda göstermek gerekitrse
 
 print(kareal(5))
 
