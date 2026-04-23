@@ -42,4 +42,4 @@ emekliligeKacYilKaldi(1985, "Sinan")
 
 liste = [1,2,3]
 help(help(liste.append))
-help(emekliligeKacYilKaldi)
+help(emekliligeKacYilKaldi)  ### açıklama bilgileri türkçe karakter almamalı
