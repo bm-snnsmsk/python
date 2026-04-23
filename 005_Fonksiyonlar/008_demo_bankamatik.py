@@ -3,7 +3,7 @@ hesapSinan = {
     "hesapNo" :"123456",
     "bakiye" :3000,  ## dictionary olduğu için günceleme yapılır
     "ekHesap" :2000,
-} # value değer olsaydı mevcut değerler üzerinde güncelleme yapılmazdı
+} # referans değer değil de value değer olsaydı mevcut değerler üzerinde güncelleme yapılmazdı
 hesapBaran = {
     "ad" :"Baran Şimşek",
     "hesapNo" :"164976",
