@@ -13,7 +13,7 @@ class Quiz :
     def __init__(self, questions):
         self.questions = questions ## sorular listesi
         self.score = 0
-        self.questionIndex = 0
+        self.questionIndex = 0 ## soru listesinin indexini kontrol etmek için 
     
     def getQuestion(self):
         return self.questions[self.questionIndex]
@@ -32,7 +32,7 @@ class Quiz :
 
     def guess(self, answer) :
         soru = self.getQuestion()
-        if soru.checkAnswer(answer) :
+        if soru.checkAnswer(answer) :   ### inherati yapılmadı ama soru nesnesi bir class olduğu için ya da questions listesi bir nesneler listesi olduğu için burdan ilgili clasın metoduna erişilebliyor
             self.score += 1
         self.questionIndex += 1  ## doğru yada yanlış cevaba bakmadan soru indexini artır
 
@@ -72,6 +72,7 @@ questions = [q1,q2,q3] ## her bir elemanı nesne olan liste
 
 quiz = Quiz(questions)
 # question = quiz.questions[quiz.questionIndex]  # getQuestion(self): daha kullanışlı ## quiz.questions[quiz.questionIndex] = 1. soru
+# print(question)
 # print(question.text)
 # question = quiz.getQuestion()  # displayQuestion daha kullanışlı
 
