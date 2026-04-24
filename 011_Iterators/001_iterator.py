@@ -2,7 +2,7 @@ liste = [1,2,3,4,5]
 
 ## for döngüsü bu işlemi zaten yapıyor
 iterator = iter(liste)
-# print(dir(iterator))
+# print(dir(iterator))   ## __iter__() metoduna sahip bir obje iterable'dır
 # print(iterator)
 
 # print(next(iterator))
