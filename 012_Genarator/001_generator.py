@@ -14,7 +14,9 @@ def cube() :
         yield i**3 # bu değerler talep edilir ve işlem durur  2. bir defa istense gösterilmez
 
 generator = cube()
-iterator = iter(generator)
+iterator = iter(generator)  ## bir üstteki yazılıdğı vakit buna gerek kalmaz
+
+## ne mzan generator üzerinde bir değer isteniyorsa 
 
 print(next(iterator))
 print(next(iterator))
