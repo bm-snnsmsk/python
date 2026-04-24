@@ -31,7 +31,7 @@ import math
 print(math.gcd(39, 65))
 
 
-
+### sys.builtin_module_names
 ## built-in fonksiyonlar   ###  metot class fonksiyonlarıdır
 print(bin(65))
 print(hex(65))
