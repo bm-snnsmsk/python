@@ -4,7 +4,7 @@
 #     try :
 #         print(int(i))
 #     except Exception :
-#         continue
+#         continue   ## continbue şrt değil pass ile de devam ettirlibilir
 ###############################################################
 # while True :
 #     sayi = input("sayi : ")
@@ -12,10 +12,11 @@
 #         break
 #     try :        
 #         print(float(sayi))
-#         break
-#     except Exception :
+#         break  ## break olmazsa doğru değer girilse de döngü devam eder
+#    ###except Exception :
+#     except ValueError :    ## her iki durum da olabşilir
 #         print("geçersiz değer")
-#         continue
+#         continue   ## continue olmazsa da çalışır
 ###############################################################
 # def check_parola(parola) :
 #     turkce_karakterler = "çÇğĞıİöÖşŞüÜ"
