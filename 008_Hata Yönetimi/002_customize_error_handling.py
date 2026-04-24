@@ -13,6 +13,8 @@ def check_password(psw) :
         raise Exception("parola büyük harf içermeli")
     elif not re.search("[0-9]", psw) :
         raise Exception("parola rakam içermeli")
+    elif not re.search("[_@$]", psw) :
+        raise Exception("parola alfa numeric karakter içermeli")
     elif re.search("[\s]", psw) :
         raise Exception("parola boşluk içermemeli")
     else :
