@@ -1,8 +1,13 @@
+# 1 - kendi hazırladığımız modüller
+# 2 - hazır modüller
+# 2a - Standart kütühane modülleri
+# 2b - 3. şahıs modülleri   (pypi.org)  >>> pip install paket_adi
+
 # import math 
 
-# print(dir(math))
+# print(dir(math))    ### math modülündeki metotlar
 # print(help(math))
-# print(help(math.pow))
+# print(help(math.pow))   ### metot hakkındaki açıklama
 
 
 import math as islem 
@@ -27,7 +32,7 @@ print(math.gcd(39, 65))
 
 
 
-## built-in metot
+## built-in fonksiyonlar   ###  metot class fonksiyonlarıdır
 print(bin(65))
 print(hex(65))
 print(chr(65))
