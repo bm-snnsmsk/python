@@ -39,7 +39,7 @@
 #     print("herşey yolunda")
 
 
-# while True :  # doğru bilgi girilene kadar userdan bilgi alır
+# while True :  # doğru bilgi girilene kadar userdan bilgi alır , herşey yolunda ise break ile döngüdebn çık
 #     try :
 #         x = int(input("x : "))
 #         y = int(input("y : "))
