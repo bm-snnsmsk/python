@@ -5,11 +5,19 @@ import random
 # print(help(random.shuffle))
 
 print(random.random())  # 0.0 - 1.0
+print(random.random()*100)  # 0.0 - 99.9999
+print(random.random()*100 + 5)  # 5.0 - 104.9999
+print(random.uniform(0,100))  # 0.0 - 99.999
 print(random.uniform(3,5))  # 3.0 - 4.999
+print(int(random.uniform(2,12)))  # 2 - 11
+
 print(random.randint(3,50))  # 3 - 50
 liste = ["sinan","baran","tuba","emine"]
 print(random.randint(0, len(liste) - 1))
-print(random.choice(liste))
+print(liste[random.randint(0, len(liste) - 1)])   ### rastegele bir seçim yapar
+print(random.choice(liste))      ### listden rastgele bir seçim yapar
+
+
 print(liste)
 random.shuffle(liste)
 print(liste)
