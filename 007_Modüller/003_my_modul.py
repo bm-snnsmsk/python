@@ -6,3 +6,10 @@ import my_modul
 print(my_modul.number)
 print(my_modul.numbers)
 print(my_modul.func(23))
+
+
+#################################
+import sys
+print(sys.path)
+
+##########
