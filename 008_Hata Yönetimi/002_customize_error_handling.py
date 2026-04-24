@@ -31,3 +31,19 @@ else :
 finally :
     print("finally her zaman çalışır")
 ###############################################################
+
+class Person :
+    def __init__(self, name, year) :
+        if len(name) > 10 :
+            raise Exception("isim alanı 10 karakterden büyük olmalmalı")
+        else : 
+            name = name
+
+person = Person("Sinan şimşek", 1989)   >>>> hatayı sşöyle fırlatır
+### # Traceback (most recent call last):
+#   File "c:\Users\bm_snnsmsk\Desktop\python\010\02.py", line 39, in <module>
+#     person = Person("Sinan şimşek", 1989)
+#   File "c:\Users\bm_snnsmsk\Desktop\python\010\02.py", line 35, in __init__
+#     raise Exception("isim alanı 10 karakterden büyük olmalmalı")
+# Exception: isim alanı 10 karakterden büyük olmalmalı
+        
