@@ -8,7 +8,7 @@
 # "r" okuma. dosya konumda yok hata verir
 
 file = open("Dosyalar/newfile.txt", "a", encoding="utf-8")
-# file.write("dosyaya ekleme yapıldı")
+# file.write("dosyaya ekleme yapıldı") ## içerik en son karakter sonuba ekleme yaparr
 file.write("dosyaya ekleme yapıldı\n")
 file.close()
 
