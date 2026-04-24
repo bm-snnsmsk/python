@@ -4,8 +4,8 @@
 
 # "w"  yazma modu. dosya mevcut ise eski bilgiler silinir.
 # "a"  ekleme yapar. dosya varsa ekleme yapar dosya konumda yoksa oluşturur
-# "x"  oluşturma.dosya varsa ekleme hata verir dosya konumda yoksa oluşturur
-# "r" okuma. dosya konumda yok hata verir
+# "x"  oluşturma.dosya varsa hata verir, dosya konumda yoksa oluşturur
+# "r" okuma. dosya konumda yoksa hata verir
 
 
 dosya_name = "Dosyalarwww/newfile.txt"   ## dosya olmadığından hata verecektir
