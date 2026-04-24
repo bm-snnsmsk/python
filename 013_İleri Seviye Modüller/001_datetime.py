@@ -48,6 +48,15 @@ print(result.days)   # 14501
 print(result.seconds)   # 75998
 print(result.microseconds)   # 371969
 
+
+### şu kadar zaman sonra veya önce
 print(datetime.now() + timedelta(days=10)) # 2024-09-24 21:06:38.372850
 print(datetime.now() + timedelta(days=10, minutes=100)) # 2024-09-24 22:46:38.372850
 print(datetime.now() - timedelta(days=10, minutes=100)) # 2024-09-04 19:26:38.372850
+
+
+#############################
+import time
+import datetime
+print(time.time())
+print(datetime.datetime.timestamp(datetime.datetime.now()))
