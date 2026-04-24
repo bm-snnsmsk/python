@@ -58,9 +58,9 @@ try :
 except Exception as e: 
     print("yanlış bilgi")
     print(e)
-else: 
+else:     ### except bloğu çalışmazsa else bloğu çalışır
     print("herşey yolunda")
-finally :
+finally :   ### try except, else çalışsa sa da çalışma sa da her zaman finally bloğu çalışır
     print("hata olsa da olmasa da çalışan blok")
     ## dosya açma kapatma gibi projelerde kullanılıır
     ## veya database kapatma
