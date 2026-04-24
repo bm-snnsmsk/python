@@ -1,3 +1,7 @@
+## tüm hata çeşitleri
+## https://docs.python.org/3/library/exceptions.html
+
+
 # print(x)          => NameError
 # int("1a2")        => ValueError
 # print(10/0)       => ZeroDivisionError
