@@ -11,7 +11,7 @@ import datetime
 # os.chdir("../..")   # iki üst dizinine git
 # os.chdir("C:\\")   # C dizinine git
 # os.mkdir("newdirectory")   # belirtilen dizinde yeni bir klasör oluştur
-# os.mkdirs("newdirectory/yenibir klasor")   # belirtilen dizinde iç içe  klasör oluştur
+# os.makedirs("newdirectory/yenibir klasor")   # belirtilen dizinde iç içe  klasör oluştur
 
 # os.rename("newdirectory", "newname")
 # os.rmdir("newdirectory") ## boş dizin silme
