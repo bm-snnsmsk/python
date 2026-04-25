@@ -22,6 +22,11 @@ import datetime
 
 ## sadece .py dosyaları listele
 # for i in os.listdir() :
+#     if i.endswith(".py") :   ### dosya sonu .py ile bitiyor mu (dosya sonunu sorgulama)
+#         print(i)
+
+### listeleme yapılacak dizinde .py dosyaları varsa eğer listeler
+# for i in os.listdir(f"{os.getcwd()}/003/") :
 #     if i.endswith(".py") :
 #         print(i)
 
@@ -31,22 +36,29 @@ import datetime
 # result = datetime.datetime.fromtimestamp(os.stat("deneme_1.py").st_atime)  # son erişim time
 # result = datetime.datetime.fromtimestamp(os.stat("deneme_1.py").st_mtime)  # değiştirme time
 
-
+### program çalıştırma veya linuxta komut / betik çalıştırma
 # os.system("deneme_1.py")   ## programı veya çalıştırma
-  # tam yol C:\Users\bm_snnsmsk\Desktop\python_sadik_turan_05.09.2024\deneme_1.py
+# os.system("notepad.exe")   ## programı veya çalıştırma
 
+# tam yol C:\Users\bm_snnsmsk\Desktop\python_sadik_turan_05.09.2024\deneme_1.py
 
+# result = os.path.abspath("01.py") ## C:\Users\bm_snnsmsk\Desktop\python\01.py
 # result = os.path.dirname("C:/Users/bm_snnsmsk/Desktop/python_sadik_turan_05.09.2024/deneme_1.py")  # directory path  -- C:\Users\bm_snnsmsk\Desktop\python_sadik_turan_05.09.2024\
 # result = os.path.dirname(os.path.abspath("deneme_1.py"))  # directory path  -- C:\Users\bm_snnsmsk\Desktop\python_sadik_turan_05.09.2024\
 
+# os.remove(dosyaadi_dosyayolu) 
 # result = os.path.exists("deneme_1.py") # dosya veya klasör sorulama # True
+# result = os.path.exists("C:\Users\bm_snnsmsk\Desktop\python") # dosya veya klasör sorulama # True
+# result = os.path.exists("C:\Users\bm_snnsmsk\Desktop\python\01.py") # dosya veya klasör sorulama # True
+
 # result = os.path.isdir("C:/Users/bm_snnsmsk/Desktop/python_sadik_turan_05.09.2024/deneme_1.py") # klasör yolu mu sorulama # False
 # result = os.path.isdir("C:/Users/bm_snnsmsk/Desktop/python_sadik_turan_05.09.2024") # klasör yolu mu sorulama # True
 
 # result = os.path.isfile("C:/Users/bm_snnsmsk/Desktop/python_sadik_turan_05.09.2024/deneme_1.py") # dosya yolu mu sorulama # True
 # result = os.path.isfile("C:/Users/bm_snnsmsk/Desktop/python_sadik_turan_05.09.2024") # dosya yolu mu sorulama # True
 
-# result = os.path.join("C:\\", "deneme", "deneme1") # belirtilen dizinde dizin oluşturma
+# result = os.path.join("C:\\", "deneme") # C dizinini deneme ile değiştir
+# result = os.path.join("C:\\", "deneme", "deneme1") # C dizinini deneme ile değiştir ve altına deneme1 klasörü ekle
 
 # result = os.path.split("C:\\deneme") # dizinleri parçalama
 result = os.path.splitext("deneme_1.py") # dosya isim ve uzantıya çevirme
