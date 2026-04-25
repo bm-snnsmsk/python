@@ -60,7 +60,7 @@ class UserRepository:
         # json class objeyi almadığı için öncelikle class objeyi dict'e çeviriyoruz
         liste = []
         for i in self.users :        
-            liste.append(json.dumps(i.__dict__))
+            liste.append(json.dumps(i.__dict__))    ### __dict__ objeyi dictionaty çevirir
 
         with open("users.json", "w") as f :
             # json.dump(self.users, f) ## users objesi almaz
