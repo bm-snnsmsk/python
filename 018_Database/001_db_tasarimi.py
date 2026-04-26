@@ -80,10 +80,11 @@ id    ürün_id     müsteri  sipariş_tarihi
 
 
 ### many to many 
-### bu tablolarda id olamaz
+### bu tablolarda id olamaz  (bu satırı- bence yanlış) çünkü her tablonun id si vardır
 ## her ikisi de bvirincil anahtar olmalı
 ## tabloda değişmez bir alan varsa o başka. o zaman id kullanılır    >>>>> rol permission ve role_permissipon daki gibi
 ### bir ürünün birden fazla kategorisi olablir ve diğer yandan da bir kategorinin de birden fazla ürünü işaret edebilir
+## many to many tablolarında ayrı yapılmalı çünkü one yo many de category kolonuna 1,4 şeklidne ilişkili olduğu kategoriler yazılmaz
 ProductCategroy
 urunid    categoryid
 1         1
