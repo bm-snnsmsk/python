@@ -1,5 +1,7 @@
 import requests
 
+# https://api.github.com/users/bm-snnsmsk
+# https://api.github.com/users/bm-snnsmsk/repos
 
 # github.com/settings/tokens
 
