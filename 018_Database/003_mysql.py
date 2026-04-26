@@ -1,4 +1,11 @@
+# https://dev.mysql.com/downloads     >>> bu sayfada server kur
+# https://dev.mysql.com/downloads/workbench/     ### aynı sayfada arayüz progrmı olan mysql bench kur
+
+
+
 import mysql.connector
+
+
 
 mydb = mysql.connector.connect(
     host = "localhost",  ## 192.23.45.56  ## hosting kiralanaksa alınacak örnek adres
