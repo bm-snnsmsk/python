@@ -56,7 +56,7 @@ html_doc = '''
 '''
 soup = BeautifulSoup(html_doc, "html.parser")
 
-# result = soup.prettify()
+# result = soup.prettify()    ### çıktıyı düzenli bir şekilde çıkarır
 result = soup.title
 result = soup.head
 result = soup.body
