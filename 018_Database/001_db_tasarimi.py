@@ -2,6 +2,7 @@
 
 one to one                   
 --- normal tablolar >>> biri ürün bir detay ile bir detay da bir ürünü işaret edebilir
+## bir tablo diğer tablonun devamı gibidir. tek ürün tek detay, tek detay tek ürüne ait gibi....
 product                     produc_detail
 id  name         price      id  renk     ebat
 1   samsung s6   2000       1   kırmızı  5inc
