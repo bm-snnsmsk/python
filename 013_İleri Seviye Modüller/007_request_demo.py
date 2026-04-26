@@ -15,3 +15,7 @@ for key, value in to_json["conversion_rates"].items() :
 
 
 
+# print(json.loads(requests.get(f"https://v6.exchangerate-api.com/v6/{api_key}/latest/{kur}").text)["conversion_rates"]['TRY'])
+
+
+
