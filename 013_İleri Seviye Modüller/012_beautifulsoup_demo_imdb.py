@@ -14,7 +14,7 @@ html = requests.get(url, headers=headers).content # 403 forbidden hatası almama
 soup = BeautifulSoup(html, "html.parser")
 # print(soup)
 # liste = soup.find("ul", {"class":"ipc-metadata-list"}).find_all("li", limit=1)
-liste = soup.find("ul", {"class":"ipc-metadata-list"}).find_all("li")
+liste = soup.find("ul", {"class":"ipc-metadata-list"}).find_all("li")  ## clası verilmiş olan ul ' yi onun altıundaki li leri getir
 # print(liste)
 
 for i in liste : 
