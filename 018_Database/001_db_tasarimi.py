@@ -9,7 +9,7 @@ id  name         price      id  renk     ebat
 3   dell laptop  5000       3   beyaz    4.8inc
 
 
-one to many
+one to many ## her bir ürün sadece bir categoriye air tersten bakarsak her bir kategoriginin birden fazla ürüne karşılığı vardır
 ---  
 product                          category
 id  name         price  catid    id  name
@@ -56,7 +56,7 @@ id    ürün_id     müsteri  sipariş_tarihi
 1     1           1        1.01.2019
 
 ############################################################
-many to many
+many to many            ### bir ürün birden fazla kategoriye ait olabilir her bir kategori de birden fazla ürünü işaret edebilir
 müşteri                kategory
 id  müşteri_adı        id  kategory_adı
 1   ahmet              1   telefon
@@ -82,7 +82,8 @@ id    ürün_id     müsteri  sipariş_tarihi
 ### many to many 
 ### bu tablolarda id olamaz
 ## her ikisi de bvirincil anahtar olmalı
-## tabloda değişmez bir alan varsa o başka. o zaman id kullanılır
+## tabloda değişmez bir alan varsa o başka. o zaman id kullanılır    >>>>> rol permission ve role_permissipon daki gibi
+### bir ürünün birden fazla kategorisi olablir ve diğer yandan da bir kategorinin de birden fazla ürünü işaret edebilir
 ProductCategroy
 urunid    categoryid
 1         1
