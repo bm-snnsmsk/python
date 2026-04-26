@@ -1,7 +1,7 @@
 '''
 
 one to one                   
---- normal tablolar
+--- normal tablolar >>> biri ürün bir detay ile bir detay da bir ürünü işaret edebilir
 product                     produc_detail
 id  name         price      id  renk     ebat
 1   samsung s6   2000       1   kırmızı  5inc
