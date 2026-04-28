@@ -13,6 +13,8 @@ mydb = mysql.connector.connect(
     auth_plugin='mysql_native_password' ## şifre çözümleme hatası bu kodla giderildi
 )
 
+# print(mydb)
+
 mycursor = mydb.cursor()
 # mycursor.execute("CREATE DATABASE mydatabase")  ## DB oluşturma
 
