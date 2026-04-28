@@ -1,7 +1,6 @@
 # https://dev.mysql.com/downloads     >>> bu sayfada server kur
 # https://dev.mysql.com/downloads/workbench/     ### aynı sayfada arayüz progrmı olan mysql bench kur
-
-
+## pip install mysql-connector
 
 import mysql.connector
 
