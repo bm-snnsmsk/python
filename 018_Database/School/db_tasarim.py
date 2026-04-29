@@ -1,7 +1,7 @@
 ## veritabanı tasarımı
 
 # ALTER TABLE class
-# ADD CONSTRAINT fk_teacher_class
+# ADD CONSTRAINT fk_teacher_class   ### fk_teacher_class opsiyonel ayrıca rastgele bir isim verilebilir
 # FOREIGN KEY (teacherid) REFERENCES teacher(id)
 
 # ALTER TABLE student
@@ -59,6 +59,7 @@ name
 
 class_lesson
 ---------------------
+id
 classid
 lessonid
 teacherid
