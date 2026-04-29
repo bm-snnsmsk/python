@@ -11,10 +11,11 @@ def getProducts() :
     sql = "SELECT * FROM products ORDER BY price DESC" ## azalan
     sql = "SELECT * FROM products ORDER BY name, price" ## önce name' göre sırala, grupla sonra her price'a göre sırala
     
-    cursor.execute(sql)
+    
     
 
     try :
+        cursor.execute(sql)
         urunler = cursor.fetchall() 
         for i in urunler :
             print(f"id : {i[0]} - urun adı : {i[1]} ---- urun fiyatı : {i[2]}")
