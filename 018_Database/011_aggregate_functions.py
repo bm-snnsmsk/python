@@ -5,7 +5,7 @@ def getProducts() :
     conn = mysql.connector.connect(host = "localhost", user = "root", password = "Password1234", auth_plugin='mysql_native_password', database='node_app')
     cursor = conn.cursor()
     
-    sorgu = "SELECT COUNT(*) FROM products" 
+    sorgu = "SELECT COUNT(*) FROM products"    ## toplam satır sayısı
     sorgu = "SELECT COUNT(name) FROM products" ## yukardaki ile aynı
     sorgu = "SELECT COUNT(*) FROM products WHERE price > 10000" ## şartı sağlayan kayıt sayısı
     sorgu = "SELECT AVG(price) FROM products" ## ortalama
