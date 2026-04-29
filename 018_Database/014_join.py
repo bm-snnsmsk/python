@@ -9,10 +9,10 @@ import mysql.connector
 # cascade (ilşkili veriler de silinsin), 
 # set null(ilişkili derğerler null olarak belirlenmiş olacaktır ama en bata model tasarlanmasında prodeucts tablosunda categoryid alanı 
 # NN(not null seili olmaması lazım null değerini kabul etmesi gerekir)
-seçeneklerinden biri seçilebilir
+# seçeneklerinden biri seçilebilir
 
 
-## inner join   >>> keşisim
+## inner join   >>> keşisim   (sadece keşisenler yani categoryid'si null olanlar gelmez)
 ## left join   >>> keşisim + soldaki küme
 ## right join   >>> keşisim + sağdaki küme
 ## full outer join   >>> keşisim + her iki küme
@@ -21,6 +21,7 @@ seçeneklerinden biri seçilebilir
 def getProducts() :
     conn = mysql.connector.connect(host = "localhost", user = "root", password = "Password1234", auth_plugin='mysql_native_password', database='node_app')
     cursor = conn.cursor()
+
     
     sql = "SELECT * FROM products"
     sql = "SELECT * FROM categories"
@@ -31,10 +32,11 @@ def getProducts() :
     sql = "SELECT products.name, products.price, categories.name FROM products INNER JOIN categories ON categories.id=products.categoryid WHERE categories.name = 'telefon'"
     sql = "SELECT p.name, p.price, c.name FROM products AS p INNER JOIN categories AS c ON c.id=p.categoryid WHERE c.name = 'telefon'"
     
-    cursor.execute(sql)
+    
     
 
     try :
+        cursor.execute(sql)
         urunler = cursor.fetchall() 
         for i in urunler :
             print(f"{i}")
