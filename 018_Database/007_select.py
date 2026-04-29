@@ -3,7 +3,8 @@ import mysql.connector
 
 def getProducts() :
     conn = mysql.connector.connect(host = "localhost", user = "root", password = "Password1234", auth_plugin='mysql_native_password', database='node_app')
-    cursor = conn.cursor()
+    cursor = conn.cursor()    ###  print(f"urun adı : {i[0]}")  
+    # cursor = conn.cursor(dictionary=True)   bu özellik aktif yapılınca  print(f"urun adı : {i["Name"]} ---- urun fiyatı : {i["Price"]}")  
     
     # sql = "SELECT * FROM products"
     sql = "SELECT name, price FROM products"
