@@ -117,6 +117,35 @@ class Student :
         except Exception as err :
             print(f"Hata : {err}")
 
+#############################################################################
+    @staticmethod
+    def updateStudents2222(liste) :
+        sql = "UPDATE student SET studentnumber = %s, name=%s, surname=%s, birthdate=%s, gender=%s WHERE id=%s"
+        values = []
+        order = [1,2,3,4,5,0]
+        for item in liste :
+            item = [item[i]] for i in order]
+            values.append[item] 
+            
+        try : 
+            Student.curs.executemany(sql, values)  
+            Student.conn.commit()
+            print(f"{Student.curs.rowcount} tane kayıt güncellendi")
+        except Exception as err :
+            print(f"Hata : {err}")
+
+    #########    fonksiyonu kullanma                    ########
+    students = Struden.getStudentGender("E")
+    print(students)
+
+    liste = []
+    for std in students :
+        std = list(std)   ## tuple verilerinde güncellenme olamadığı için listeye çeviriylor
+        std[2] = "Mr. " + std[2]
+        liste.append(std)
+     Student.updateStudents2222(liste)
+    #############################################################################
+
     
     
     @staticmethod
