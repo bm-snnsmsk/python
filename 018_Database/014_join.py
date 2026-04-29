@@ -1,5 +1,22 @@
 import mysql.connector
 
+# ALTER TABLE products
+# ADD CONSTRAINT fk_categories_products
+# FOREIGN KEY (categoryid) REFERENCES categories(id)
+
+# products ayar sayfasında foreing key alanında on update veya on delete den sonra 
+# restric(varsayılan değer silmeyi engeller), 
+# cascade (ilşkili veriler de silinsin), 
+# set null(ilişkili derğerler null olarak belirlenmiş olacaktır ama en bata model tasarlanmasında prodeucts tablosunda categoryid alanı 
+# NN(not null seili olmaması lazım null değerini kabul etmesi gerekir)
+seçeneklerinden biri seçilebilir
+
+
+## inner join   >>> keşisim
+## left join   >>> keşisim + soldaki küme
+## right join   >>> keşisim + sağdaki küme
+## full outer join   >>> keşisim + her iki küme
+
 
 def getProducts() :
     conn = mysql.connector.connect(host = "localhost", user = "root", password = "Password1234", auth_plugin='mysql_native_password', database='node_app')
