@@ -56,6 +56,8 @@ class Student :
         sql = "SELECT name, surname FROM student WHERE gender = 'K' "
         sql = "SELECT * FROM student WHERE YEAR(birthdate) = 2003"
         sql = "SELECT * FROM student WHERE name = 'ali' and YEAR(birthdate) = 2005"
+        sql = "SELECT * FROM student WHERE name = 'ali' and MONTH(birthdate) = 11"
+        sql = "SELECT * FROM student WHERE name = 'ali' and DAY(birthdate) = 23"
         sql = "SELECT * FROM student WHERE name LIKE '%an%' or surname LIKE '%an%'"
         kac_kisi = "SELECT COUNT(*) FROM student WHERE gender = 'E'"
         sql = "SELECT * FROM student WHERE gender='K' ORDER BY name, surname"
