@@ -6,6 +6,7 @@ def updateProduct() :
     cursor = conn.cursor()
     
     sorgu = "UPDATE products SET name = 'blacberry', price=25000 WHERE id = 5 " 
+    # sorgu = "UPDATE products SET name = %s, price=%s WHERE id = %s " >>> cursor.execute(sorgu, ("blacberry", 25000, 5)) 
     
     
     cursor.execute(sorgu)    
