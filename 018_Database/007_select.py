@@ -9,10 +9,11 @@ def getProducts() :
     sql = "SELECT name, price FROM products"
 
 
-    cursor.execute(sql)
+    
     
 
     try :
+        cursor.execute(sql)
         ilk_urun = cursor.fetchone() 
         urunler = cursor.fetchall() 
         print(f"############ ilk ürün #####################")
