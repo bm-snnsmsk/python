@@ -39,6 +39,8 @@ class MainWindow(QMainWindow):
         vertical_layout.addLayout(horizontal_layout)
         vertical_layout.addLayout(horizontal_layout_2)
         vertical_layout.addWidget(Color("lightblue"))
+        
+        # grid_layout.addWidget(Color("#f09"), 2 ,2)    ## row, column
 
 
         widget = QWidget()
