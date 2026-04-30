@@ -26,14 +26,17 @@ class MainWindow(QMainWindow) :
         # print(val)    ## 2 = True - 0 = False
         # print(self.ui.cbx_sinema.isChecked()) 
         # print(self.ui.cbx_sinema.text()) 
-        check_box = self.sender() ## hangi checkbox seçili
+        check_box = self.sender() ## hangi checkbox seçili ise o checkbox objesinin adresini döndürür
+        print(check_box.text())
+        print(check_box.isChecked())
+        
         
     
     def get_all_secim(self) :  
         result = ""
         # items = self.ui.centralwidget.findChildren(QCheckBox)  ## ana pencere üzerindeki tüm checkboxları getir
         items = self.ui.gbox_hobiler.findChildren(QCheckBox)  ## sadece gbox_hobiler üzerindeki checkboxları getir
-        # print(items)
+        # print(items)   ## ilgili items'leerın adreslerini dizi olarak döndürür
         for i in items :
             # print(i)
             if i.isChecked() == True :
