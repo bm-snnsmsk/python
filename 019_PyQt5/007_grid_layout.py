@@ -32,6 +32,7 @@ class MainWindow(QMainWindow):
         grid_layout.addWidget(Color("black"), 2 ,1)    ## row, column
         grid_layout.addWidget(Color("#f09"), 2 ,2)    ## row, column
 
+        ## margin ve spacing'i diğer widgetler için de kullanabiliriz.
         grid_layout.setContentsMargins(30, 75, 50, 30)  ## l - t - r - b 
         grid_layout.setSpacing(30)  ## 
  
