@@ -104,6 +104,11 @@ class MainWindow(QMainWindow) :
             self.ui.tableWidget.setItem(rowIndex,1, QTableWidgetItem(str(product['price'])))
             
             rowIndex+=1
+
+        # alternatif for 
+        for i, j in enumerate(products):            
+            self.ui.tableWidget.setItem(i,0, QTableWidgetItem(j['name'])) ## satır, kolon, içerik
+            self.ui.tableWidget.setItem(i,1, QTableWidgetItem(str(j['price']))) 
         
 
 
