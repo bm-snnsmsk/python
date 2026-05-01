@@ -12,6 +12,18 @@ class MainWindow(QMainWindow) :
         self.ui = Ui_MainWindow()  
         self.ui.setupUi(self)
 
+        ### default tarih ve zaman ayarlaama
+        
+        self.ui.dateEdit.setDate(QDate.currentDate())  ### dateEdit widgeti default tarih atamak
+        self.ui.dateEdit.setDate(QDate(2020,10,5))   ### dateEdit widgeti default tarih atamak        
+        
+        # self.ui.timeEdit.setTime(QTime(12,12,12,200))
+        # self.ui.timeEdit.setTime(QTime.currentTime())
+        
+        # self.ui.dateTimeEdit.setDateTime(QDateTime.currentDateTime())
+        self.ui.dateTimeEdit.setDateTime(QDateTime(2020,10,5,15,30))
+
+        
         self.now = QDate.currentDate()
 
 
@@ -23,8 +35,8 @@ class MainWindow(QMainWindow) :
         print(start, end)
         print(start.year())
         print(start.month())
-        print(start.daysInMonth())
-        print(start.daysInYear())
+        print(start.daysInMonth())  ## seçili ay içinde kaç gün var
+        print(start.daysInYear())   ### seçili yıl içinde kaç gün var
         # print(self.now)
         print(f"iki tarih arası toplam gün : {start.daysTo(end)} gün")
         print(f"iki tarih arası toplam gün : {start.daysTo(self.now)} gün")
