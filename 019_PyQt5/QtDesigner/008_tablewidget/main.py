@@ -57,12 +57,14 @@ class MainWindow(QMainWindow) :
 
     def doubleClick(self):
         print(self.ui.tableWidget.selectedItems())
+        # print(self.ui.tableWidget.item(self.ui.tableWidget.currentRow(), self.ui.tableWidget.currentColumn()).text())
         for item in self.ui.tableWidget.selectedItems():            
             print(item.row(), item.column(), item.text())    
 
     def tekClick(self):
         secili_satir_indexi = self.ui.tableWidget.currentRow() 
         print(f"secili_satır_indexi : {secili_satir_indexi}") 
+        # print(self.ui.tableWidget.item(self.ui.tableWidget.currentRow(), self.ui.tableWidget.currentColumn()).text())
 
 
 
