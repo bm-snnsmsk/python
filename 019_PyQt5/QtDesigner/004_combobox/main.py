@@ -15,6 +15,8 @@ class MainWindow(QMainWindow) :
         # self.ui.cbx_sehirler.addItem("Silopi")
         # self.ui.cbx_sehirler.addItem("Mardin")
 
+        self.verileri_yukle()   ## sayfa yüklenince combo içeriği de doldurulmış olur
+
         self.combo = self.ui.cbx_sehirler
 
         # self.liste = ["Silopi","şırnak","mardin","hakkari","urfa","istanbul"]
@@ -40,6 +42,12 @@ class MainWindow(QMainWindow) :
     def selected_changed_index(self, val) :
         print(f"seçilen index : {val}")
 
+    #### şu şekilde de metot yazılabilir 
+    def selected_changed_index(self) : ###
+        print(f"seçilen index : {self.ui.cbx_sehirler.cuurentIndex()}")
+        print(f"seçilen text : {self.ui.cbx_sehirler.cuurentText()}")
+
+    #### yukardaki gibi val değeri yazmadan da metot yazılabilir
     def selected_changed_text(self, val) :
         print(f"seçilen text : {val}")
 
