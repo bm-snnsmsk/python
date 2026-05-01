@@ -65,6 +65,7 @@ class MainWindow(QMainWindow) :
         secili_satir_indexi = self.ui.tableWidget.currentRow() 
         print(f"secili_satır_indexi : {secili_satir_indexi}") 
         # print(self.ui.tableWidget.item(self.ui.tableWidget.currentRow(), self.ui.tableWidget.currentColumn()).text())
+        # secili_hücrenin_içeriği = self.ui.tableWidget.currentItem().text()
 
 
 
