@@ -29,15 +29,21 @@ class MainWindow(QMainWindow) :
 
     def addStudent(self):
         currentIndex = self.ui.lw_ogrenciler.currentRow() ## o anki seçili sıra
+        uzunluk = self.ui.listWidget.count() ## toplam liste uzunluğu
+        # https://www.geeksforgeeks.org/python/pyqt5-input-dialog-python/
         text, ok = QInputDialog.getText(self, "New Student", "Student Name")
         if ok and text is not None:
             self.ui.lw_ogrenciler.insertItem(currentIndex ,text)
+            # self.ui.lw_ogrenciler.insertItem(0 ,text)  ## hepm başa ekleme yapılabilir
+            # self.ui.listWidget.insertItem(uzunluk+1,text)  ## sona ekleme
+            # self.ui.listWidget.addItem(text)  ## sona ekleme
 
     def editStudent(self):
         index = self.ui.lw_ogrenciler.currentRow()
         item = self.ui.lw_ogrenciler.item(index)
 
         if item is not None:
+            # https://www.geeksforgeeks.org/python/pyqt5-input-dialog-python/
             text, ok = QInputDialog.getText(self, "Edit Student", "Student Name", QLineEdit.Normal, item.text())
             if text and ok is not None:
                 item.setText(text)
