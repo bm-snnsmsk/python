@@ -43,6 +43,82 @@ class                       instance (obje)
 
 '''
 
+class CartItem:
+
+    ## 
+    discount_rate2 = 0.8
+    item_count2 = 0
+
+
+
+    # constructor => yapıcı metot
+    def __init__(self, name, price, quantity):
+        # instance attribues
+        self.name = name
+        self.price = price
+        self.quantity = quantity
+    
+    @classmethod
+    def display_item_count(cls):
+        return f"{cls.item_count} tane ürün oluşturuldu."
+
+    # instance methods
+    def calculate_total(self):
+        return self.price * self.quantity
+    
+    def apply_discount(self, rate):
+        self.price = self.price * rate
+        ## self.price = self.price * CartItem.discount_rate
+
+# instance => nesne, örnek
+item1 = CartItem("Telefon", 50000, 2)
+item2 = CartItem("Bilgisayar", 70000, 1)
+item3 = CartItem("kitap", 200, 2)
+
+item1.apply_discount(0.8)
+print(item1.calculate_total())
+
+item2.apply_discount(0.7)
+print(item2.calculate_total())
+
+item3.apply_discount(0.9)
+print(item3.calculate_total())
+
+
+#############################################
+
+def __init__(self, name, price):
+        self.name = name
+        if price >= 0:
+            self._price = price
+        else:
+            raise ValueError("ürün fiyatı için negatif değer ataması yapılmaz")
+        
+    #### 2. yöntem # print(p.name, p.price) çağrılmak için
+    @property
+    def price(self):
+        return self._price
+    
+    @price.setter  # print(p.name, p.price) çağrılmak için
+    def price(self, value):
+        if value >= 0:
+            self._price = value
+        else:
+            raise ValueError("ürün fiyatı için negatif değer ataması yapılmaz")
+        
+        ### 1. yöntem    
+    # def set_price(self, value):
+    #     if value >= 0:
+    #         self._price = value
+    #     else:
+    #         raise ValueError("ürün fiyatı için negatif değer ataması yapılmaz")
+        
+    # def get_price(self):
+    #     return self._price
+
+    
+###################################################
+
 class Deneme :
     pass
 
