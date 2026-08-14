@@ -1,5 +1,8 @@
 # fonksiyon                          >>> bizim tanımldığımız veya built in fonksiyonlar (sum(), vb)
 # metot = class fonksiyonlari        >>>  listem.append(), random.randint() ...
+# help(hesapla)
+# help(random.randint)
+
 
 def selam(name = "user") :
     print("selam " + name)
