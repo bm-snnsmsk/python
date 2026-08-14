@@ -14,6 +14,8 @@ print("benim adım {a} {s} {n}".format(n=name, s=surname, a=age))
 
 print(f"benim adım {name} {age} {surname}")
 
+
+### sonuç 0.454512121212 tam kısmı 0 ise 0.2 işe yarar, aksi takdirde tam sayıyı hesaplar kalan kısmı ondalık gösterir
 result = 200 / 700
 print("sonuc : {r}".format(r=result))
 print("sonuc : {r:1.3}".format(r=result))   # 0.286
