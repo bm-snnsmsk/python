@@ -57,3 +57,46 @@ para_yatir(hesapSinan, 4500)
 
 
 
+"""
+print("Banka uygulamasına hoş geldiniz...")   
+banka = {
+        'default' :{"bakiye":1000, 'ekhesap': 1000} ,
+        'sinan' :{"bakiye":1000, 'ekhesap': 1000} ,
+    }
+
+# print(banka["sinan"]["bakiye"])
+
+
+def hesapvarmi(isim):    
+    if isim in banka :
+        return True
+    else : 
+        return False
+
+
+
+
+while True :
+    print("Lütfen bir seçim yapınız. ")
+    print("1 : bakiye öğren ")
+    print("2 : Para çek ")
+    print("3 : Para yatır ")
+    secim = input("Çıkış yapılsın mı (e/h) : ")
+    if secim.lower() == "e" :
+        break
+    elif secim.lower() == "1" :
+        ad = input("isim girin")
+        bakiye = input("bakiye girin")
+        ekhesap = input("ek hesap istiyor musunuz")
+        banka.appen({
+            "isim" : ad,
+            "bakiye" : bakiye,
+            "ekhesap" : 5000,
+        })
+    elif secim.lower() == "2" :
+        isim = isim = input("isim girin : ")
+        if hesapvarmi(isim) :
+            print("bakiyeniz")
+
+"""
+
