@@ -48,6 +48,21 @@ print(users.items())
 print(users["mehmet"])
 print(users["mehmet"]["age"])
 
+
+"""
+demo = {
+    "sinan":33,
+    "emine":27,
+    "baran":5,
+    "tuba":8,
+    "zozan":30,
+}
+
+for i in demo :
+    print(f"{i} : {demo[i]}")
+"""
+
+
 """
 ogrenciler = {
 '120' : {'ad':'Ali', 'soyad':'yılmaz', 'telefon':'5444494263'},
