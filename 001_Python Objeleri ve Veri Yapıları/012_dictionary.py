@@ -70,6 +70,8 @@ ogrenciler = {
 '130' : {'ad':'Ali', 'soyad':'yılmaz', 'telefon':'5444494263'},
 }
 
+# ogrenciler.update({"130":{"ad":"sinan"}})
+
 ogrencino = input("öğrenci no : ")
 print(ogrenciler[ogrencino])
 """
@@ -96,6 +98,10 @@ ogrenciler.update({
 })
 
 print(ogrenciler)
+
+
+ogrencino = input("öğrenci no : ")
+print(ogrenciler[ogrencino])
 """
 
 
