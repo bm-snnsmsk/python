@@ -32,3 +32,16 @@ while True :
 
   
 print(f"çift sayısı : {cift} >>> tek sayısı : {tek}")
+
+################ 
+i = 0
+while True :
+    i += 1
+
+    if i == 100 :
+        break
+    
+    if i % 2 == 1 :
+        continue
+    print(f"sayı : {i}") 
+#################
