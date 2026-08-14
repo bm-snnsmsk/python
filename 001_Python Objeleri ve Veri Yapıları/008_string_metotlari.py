@@ -52,6 +52,23 @@ print(mesaj.count("www"))
 print(mesaj.count("sinan"))
 print(mesaj.count("e",0,5))   # 0,5 aralığında bul say
 
+# print(mesaj.index("ç"))
+# print(mesaj.isdecimal())
+# print("5".isdecimal())
+# print("s".isdecimal())
+# print("48".isascii())
+# print("G".isupper())
+
+
+# name = "Sinan Şimşek"
+# phone = "05444494263"
+# print(name.lower())
+# print(name.upper())
+# print(name.endswith("k"))
+# print(name.endswith("Şimşek"))
+isim = "Sinan Şimşek ağlamak öğrenci üşümek çağrı"
+# print(isim.replace("[çğıöşü]", "[ÇĞIÖŞÜ]"))
+# print(isim.replace("ç", "Ç"))
 
 
 print(mesaj.index("Hello"))
