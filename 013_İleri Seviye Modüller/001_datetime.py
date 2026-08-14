@@ -32,7 +32,19 @@ birthday = datetime(1985,1,1) # 1985-01-01 00:00:00
 
 
 
+"""
+import datetime
+tarih = datetime.datetime.now()
 
+
+# print(tarih)
+# print(str(tarih).split())
+yenitarih = datetime.datetime(2000,12,5,23,58,45,99999) 
+print(yenitarih)
+print(tarih-yenitarih)
+print((tarih-yenitarih).days)
+print((tarih-yenitarih).microseconds)
+"""
 
 print(result)
 print(birthday)
