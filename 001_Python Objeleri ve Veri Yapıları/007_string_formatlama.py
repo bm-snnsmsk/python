@@ -20,7 +20,8 @@ result = 200 / 700
 print("sonuc : {r}".format(r=result))
 print("sonuc : {r:1.3}".format(r=result))   # 0.286
 print(f"sonuc : {result:1.3}")   # 0.286
-print(f"{result:1.4}")   //// soldaki için de kaç basamaklık alan ayırsın
+print(f"{result:1.4}")   //// 
+print(f"{result:.4f}")   //// soldaki için de kaç basamaklık alan ayırsın, f kullaımk zorunda
 print(f"{result:0.6}")
 print(f"{result:8.6}")
 
