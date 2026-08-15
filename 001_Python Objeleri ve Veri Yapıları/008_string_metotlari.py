@@ -18,6 +18,7 @@ print("sondaki 2 hece silinsin : "+mesaj.rstrip("ek"))  #  siler
 print(mesaj.split())    # stringi boşluklardan diziye dönüştürür
 print(mesaj.split(" "))    # stringi boşluklardan diziye dönüştürür
 print(mesaj.split("."))    # stringi noktalardan diziye dönüştürür
+print(mesaj.split("e"))    # stringi e'lerden diziye dönüştürür. e'yi siler geri kalanlar dizi elemanı olur
 print(mesaj.split()[3])    # stringi diziye dçönüştürür ve 3. indexteki elemanı verir
 print("".join(mesaj.split()))    # diziye stringe dönüştürür
 print(" ".join(mesaj.split()))    # diziye stringe dönüştürür
@@ -33,12 +34,13 @@ print(mesaj.find("There"))    # bulduğu ilk kelimenin index numarasını verir
 print(mesaj.find("baran"))    # -1     bu kelime yok
 
 print(mesaj.startswith("H"))    # True
+print(mesaj.startswith("Hel"))    # True
 print(mesaj.endswith("H"))    # False
 
 print(mesaj.replace("Sinan","baran"))    # Hello There. My name is baran Şimşek
 print(mesaj.replace("","*"))    # *H*e*l*l*o* *T*h*e*r*e*.* *M*y* *n*a*m*e* *i*s* *S*i*n*a*n* *Ş*i*m*ş*e*k*
 print(mesaj.replace(" ",""))    # HelloThere.MynameisSinanŞimşek
-print(mesaj.replace("","*",5))    # *H*e*l*l*o There. My name is Sinan Şimşek
+print(mesaj.replace("","*",5))    # *H*e*l*l*o There. My name is Sinan Şimşek  >>> 5 = kaç tane sonuçta değişiklik yapılacak
 print(mesaj.replace(" ","*"))    # Hello*There.*My*name*is*Sinan*Şimşek
 print(mesaj.replace("e","E").replace("a","A").replace(" ","-"))    #HEllo-ThErE.-My-nAmE-is-SinAn-ŞimşEk
 
@@ -48,7 +50,7 @@ print(mesaj.center(50,"*"))
 print(mesaj.ljust(50,"*"))
 print(mesaj.rjust(50,"*"))
 
-print(mesaj.count("e"))
+print(mesaj.count("e"))    >>> değer yoksa 0 döndürür
 print(mesaj.count("www"))
 print(mesaj.count("sinan"))
 print(mesaj.count("e",0,5))   # 0,5 aralığında bul say
@@ -67,9 +69,14 @@ print(mesaj.count("e",0,5))   # 0,5 aralığında bul say
 # print(name.upper())
 # print(name.endswith("k"))
 # print(name.endswith("Şimşek"))
+
 isim = "Sinan Şimşek ağlamak öğrenci üşümek çağrı"
-# print(isim.replace("[çğıöşü]", "[ÇĞIÖŞÜ]"))
-# print(isim.replace("ç", "Ç"))
+# print(isim.replace("[çğıöşü]", "[ÇĞIÖŞÜ]"))  >>>> pythonda böyle bir şey desteklenmez onun yerine
+tablo = str.maketrans("sin", "123")
+sonuc = isim.translate(tablo)
+
+ya da zincirleme raplace kullanılmalı
+# print(isim.replace("ç", "Ç").replace("m", "M").replace("d", "D").replace("c", "C"))
 
 
 print(mesaj.index("Hello"))
