@@ -12,7 +12,8 @@ print(mesaj2.strip("H"))  # başta H'yi siler
 print(mesaj2.strip("Hel"))  # başta Hel'yi siler
 print(mesaj2.lstrip())  # baştaki boşlukları siler
 print(mesaj2.rstrip())  # sağdaki boşlukları siler
-print("e'ler silinsin : "+mesaj2.lstrip("He"))  #  siler        ### silemedim
+print("bastaki iki hece silinsin : "+mesaj.lstrip("He"))  #  siler 
+print("sondaki 2 hece silinsin : "+mesaj.rstrip("ek"))  #  siler 
 
 print(mesaj.split())    # stringi boşluklardan diziye dönüştürür
 print(mesaj.split(" "))    # stringi boşluklardan diziye dönüştürür
