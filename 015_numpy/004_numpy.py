@@ -31,5 +31,5 @@ result = numbers1 % 2 == 0
 
 
 print(result)                  ## true , false 
-print(numbers1[result]) # true değerler
+print(numbers1[result]) # koşulu sağlayan değerler
 
