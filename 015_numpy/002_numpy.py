@@ -7,8 +7,8 @@ result = np.arange(1,10).reshape(3,3)   ### eleman sayısı sutun X satır sçar
 result = np.arange(10,100, 3) # 10 dan başla 100' e akdar 3 atlayarak
 result = np.zeros(10).reshape(5,2)   ### eleman sayısı sutun X satır sçarpımını karşılamalı ## 10  sıfır float 
 result = np.ones(10)  ## 10 bir float
-result = np.linspace(0, 100, 5)  ## aralığı 5 e böl 4 eşit aralıpğa böl >>> [  0.  25.  50.  75. 100.]
-result = np.linspace(0, 5, 8)  ## [0.  0.71428571 1.42857143 2.14285714 2.85714286 3.57142857 4.28571429 5. ]   >>> 8 nokta
+result = np.linspace(0, 100, 5)  ## 0-100 aralığında eşit aralıklı 5 tane sayı >>> [  0.  25.  50.  75. 100.]
+result = np.linspace(0, 5, 8)  ## [0.  0.71428571 1.42857143 2.14285714 2.85714286 3.57142857 4.28571429 5. ]   >>> 0-5 aralığında eşit aralıklı 8 tane sayı 
 
 
 result = np.random.randint(0, 10)  ## 0-10 aralığında rastgele bir sayı
