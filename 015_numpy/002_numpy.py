@@ -1,6 +1,7 @@
 import numpy as np
 
 result = np.array([1,3,5,7,9,11])
+result = np.array([1,3,5,7,9,11]).reshape(3,2)   ### eleman sayısı sutun X satır sçarpımını karşılamalı
 result = np.arange(1,10)  ## 1 den başla 10' a kadar
 result = np.arange(10,100, 3) # 10 dan başla 100' e akdar 3 atlayarak
 result = np.zeros(10) ## 10  sıfır float 
