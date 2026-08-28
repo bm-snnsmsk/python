@@ -28,7 +28,7 @@ arr1 = np.arange(0,10)
 arr2 = arr1  ## referans 
 arr3 = arr1.copy()  ## değer  
 arr2[3] = 20 # her iki dizinin ilgili indexi değişri
-arr3[0] = 100
+arr3[0] = 100  ### sadece arr3 dizinin ilgili indexi değişri
 print(arr1)
 print(arr2)
 print(arr3)
