@@ -30,8 +30,8 @@ print(result) >>> [2 4 2 0 0 1 0 4 0 3 4 0 4 0 3 4 3 4 3 0 0 2 4 0 0 2 1 0 2 3 3
  4 4 3 0 2 1 4 4 2 3 3 2 2 3 4 3 4 4 3 3 4 3 0 3 0 0]
 
 result = np.random.rand(5)  ## 0-1 aralığında rastgele 5 sayı
-result = np.random.randn(5)  ## 0-1 aralığında rastgele 5 negatif sayı
-result = np.random.randn(5)  ## 0-1 aralığında rastgele 5 negatif sayı
+result = np.random.randn(5)  ## 0-1 aralığında rastgele 5 tane porizitif veya negatif sayı >>> [-0.70195693  1.06071423  1.82678196 -1.84203482 -0.27114043]
+
 
 # print(result)
 
