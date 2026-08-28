@@ -1,8 +1,8 @@
 import numpy as np
 
 result = np.array([1,3,5,7,9,11])
-result = np.arange(1,10)  ## 1 den 10' a kadar
-result = np.arange(10,100, 3) # 10 dan 100' e akdar 3 atlayarak
+result = np.arange(1,10)  ## 1 den başla 10' a kadar
+result = np.arange(10,100, 3) # 10 dan başla 100' e akdar 3 atlayarak
 result = np.zeros(10) ## 10  sıfır float 
 result = np.ones(10)  ## 10 bir float
 result = np.linspace(0, 100, 5)  ## aralığı 5 e böl
